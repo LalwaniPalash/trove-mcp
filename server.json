@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.palashlalwani/trove-mcp",
+  "description": "Unified MCP server for open academic research search, retrieval, and evidence synthesis.",
+  "version": "0.1.9",
+  "packages": [
+    {
+      "registry_type": "npm",
+      "identifier": "trove-mcp",
+      "version": "0.1.9"
+    }
+  ]
+}

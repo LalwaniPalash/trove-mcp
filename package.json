@@ -1,0 +1,55 @@
+{
+  "name": "trove-mcp",
+  "version": "0.1.9",
+  "description": "Unified MCP server for open academic research search, retrieval, and synthesis.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "trove-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/index.js",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "inspect": "npx @modelcontextprotocol/inspector node dist/index.js",
+    "sync": "tsx src/index.ts sync",
+    "test": "vitest run",
+    "test:quality": "vitest run tests/quality",
+    "test:live": "LIVE_CONTRACT=1 vitest run tests/live",
+    "typecheck": "tsc --noEmit",
+    "verify:release": "npm run typecheck && npm test && npm run test:quality",
+    "prepublishOnly": "npm run verify:release && npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "research",
+    "openalex",
+    "semantic-scholar"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "better-sqlite3": "^11.8.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.17.30",
+    "@types/pdf-parse": "^1.1.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.1"
+  }
+}
