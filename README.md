@@ -1,5 +1,7 @@
 # trove-mcp
 
+[npm package](https://www.npmjs.com/package/trove-mcp) · [GitHub repo](https://github.com/LalwaniPalash/trove-mcp)
+
 Trove is an MCP server for academic research.
 
 The basic idea is simple: let Claude search papers, fetch metadata, read open full text when it can, and build structured outputs on top of that.

@@ -2,6 +2,14 @@
   "name": "trove-mcp",
   "version": "0.1.9",
   "description": "Unified MCP server for open academic research search, retrieval, and synthesis.",
+  "homepage": "https://github.com/LalwaniPalash/trove-mcp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LalwaniPalash/trove-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LalwaniPalash/trove-mcp/issues"
+  },
   "type": "module",
   "main": "dist/index.js",
   "bin": {
