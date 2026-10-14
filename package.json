@@ -33,7 +33,8 @@
     "test:live": "LIVE_CONTRACT=1 vitest run tests/live",
     "typecheck": "tsc --noEmit",
     "verify:release": "npm run typecheck && npm test && npm run test:quality",
-    "prepublishOnly": "npm run verify:release && npm run build"
+    "prepublishOnly": "npm run verify:release && npm run build",
+    "example": "tsx examples/literature-review.ts"
   },
   "keywords": [
     "mcp",

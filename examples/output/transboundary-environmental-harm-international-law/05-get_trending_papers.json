@@ -1,0 +1,86 @@
+{
+  "arguments": {
+    "topic": "transboundary environmental harm international law",
+    "days_back": 30
+  },
+  "response": {
+    "status": "partial",
+    "degraded": true,
+    "warnings": [
+      "semantic_scholar trending-candidates failed: Upstream semantic_scholar error (429) {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}",
+      "Trending bootstrap in progress: this call seeded current citation counts, but short-window trending requires at least one older local snapshot date. Run trove sync or rerun on a later day to accumulate history.",
+      "Trending unavailable: insufficient citation snapshot velocity evidence for this topic and window."
+    ],
+    "provenance": [
+      {
+        "source": "openalex",
+        "endpoint": "trending:candidates",
+        "timestamp": "2026-10-14T10:04:45.367Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "semantic_scholar",
+        "endpoint": "trending:candidates",
+        "timestamp": "2026-10-14T10:05:41.839Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "huggingface",
+        "endpoint": "trending:candidates",
+        "timestamp": "2026-10-14T10:05:41.839Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      }
+    ],
+    "meta": {
+      "version": "0.1.10"
+    },
+    "data": {
+      "topic": "transboundary environmental harm international law",
+      "daysBack": 30,
+      "mode": "unavailable",
+      "snapshot_coverage": {
+        "candidate_count": 26,
+        "deduped_count": 26,
+        "snapshot_backed_count": 0,
+        "non_zero_velocity_count": 0,
+        "days_back": 30,
+        "bootstrap_started": true,
+        "sources": [
+          {
+            "source": "openalex",
+            "candidate_count": 20,
+            "snapshotable_count": 20,
+            "snapshot_backed_count": 0,
+            "non_zero_velocity_count": 0,
+            "warnings": []
+          },
+          {
+            "source": "semantic_scholar",
+            "candidate_count": 0,
+            "snapshotable_count": 0,
+            "snapshot_backed_count": 0,
+            "non_zero_velocity_count": 0,
+            "warnings": [
+              "semantic_scholar trending-candidates failed: Upstream semantic_scholar error (429) {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
+            ]
+          },
+          {
+            "source": "huggingface",
+            "candidate_count": 6,
+            "snapshotable_count": 5,
+            "snapshot_backed_count": 0,
+            "non_zero_velocity_count": 0,
+            "warnings": []
+          }
+        ]
+      },
+      "results": []
+    }
+  }
+}

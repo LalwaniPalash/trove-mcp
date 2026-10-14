@@ -1,0 +1,73 @@
+{
+  "arguments": {
+    "identifier": "doi:10.26650/annales.2023.73.0001"
+  },
+  "response": {
+    "status": "ok",
+    "degraded": false,
+    "warnings": [],
+    "provenance": [
+      {
+        "source": "openalex",
+        "endpoint": "cache:paper",
+        "timestamp": "2026-10-14T10:04:09.087Z",
+        "cached": true,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      }
+    ],
+    "meta": {
+      "version": "0.1.10"
+    },
+    "data": {
+      "paper": {
+        "id": "doi:10.26650/annales.2023.73.0001",
+        "openAlexId": "W4386724811",
+        "title": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles",
+        "abstract": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles",
+        "year": 2023,
+        "venue": "Annales de la Faculté de Droit d’Istanbul",
+        "doi": "10.26650/annales.2023.73.0001",
+        "citationCount": 1,
+        "referenceCount": 102,
+        "url": "https://openalex.org/W4386724811",
+        "pdfUrl": "http://dx.doi.org/10.26650/annales.2023.73.0001",
+        "openAccess": true,
+        "authors": [
+          {
+            "id": "A5021757158",
+            "name": "Mehmet Semih Gemalmaz"
+          }
+        ],
+        "institutions": [],
+        "topics": [
+          "Harm",
+          "Environmental law",
+          "Process (computing)",
+          "Soft law",
+          "Precautionary principle",
+          "Environmental impact assessment",
+          "Political science",
+          "Law",
+          "Hard law",
+          "Environmental planning"
+        ],
+        "fields": [
+          "Harm",
+          "Environmental law",
+          "Process (computing)",
+          "Soft law",
+          "Precautionary principle",
+          "Environmental impact assessment",
+          "Political science",
+          "Law",
+          "Hard law",
+          "Environmental planning"
+        ],
+        "sourcePriority": [
+          "openalex"
+        ]
+      }
+    }
+  }
+}

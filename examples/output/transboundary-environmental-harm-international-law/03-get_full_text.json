@@ -1,0 +1,63 @@
+{
+  "arguments": {
+    "identifier": "doi:10.26650/annales.2023.73.0001"
+  },
+  "response": {
+    "status": "partial",
+    "degraded": true,
+    "warnings": [
+      "Unpaywall returned no PDF for this DOI.",
+      "core full-text-lookup failed: Upstream core server error (500)",
+      "No full-text PDF source could be resolved."
+    ],
+    "provenance": [
+      {
+        "source": "openalex",
+        "endpoint": "cache:paper",
+        "timestamp": "2026-10-14T10:04:09.089Z",
+        "cached": true,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "unpaywall",
+        "endpoint": "fulltext:unpaywall",
+        "timestamp": "2026-10-14T10:04:11.706Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "openalex",
+        "endpoint": "fulltext:resolve",
+        "timestamp": "2026-10-14T10:04:16.488Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      }
+    ],
+    "meta": {
+      "version": "0.1.10"
+    },
+    "data": {
+      "fullText": {
+        "paperId": "doi:10.26650/annales.2023.73.0001",
+        "source": "none",
+        "availability": "abstract_only",
+        "truncation": {
+          "truncated": false,
+          "maxChunks": 1,
+          "returnedChunks": 1
+        },
+        "chunks": [
+          {
+            "index": 0,
+            "heading": "Abstract",
+            "text": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles",
+            "tokenEstimate": 77
+          }
+        ]
+      }
+    }
+  }
+}

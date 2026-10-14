@@ -1,0 +1,470 @@
+{
+  "arguments": {
+    "query": "transboundary environmental harm international law",
+    "depth": 1
+  },
+  "response": {
+    "status": "partial",
+    "degraded": true,
+    "warnings": [
+      "semantic_scholar search failed: Upstream semantic_scholar error (429) {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}",
+      "full-text fetch failed for doi:10.22054/qjpl.2017.7786: literature-map per-paper timeout for doi:10.22054/qjpl.2017.7786",
+      "full-text fetch failed for doi:10.12957/rqi.2019.31294: literature-map per-paper timeout for doi:10.12957/rqi.2019.31294",
+      "full-text fetch failed for doi:10.1007/978-3-031-13264-3: literature-map per-paper timeout for doi:10.1007/978-3-031-13264-3",
+      "full-text fetch failed for doi:10.1017/cbo9780511511394: literature-map per-paper timeout for doi:10.1017/cbo9780511511394",
+      "build_literature_map reached 45s deadline; returned partial structured map.",
+      "Literature map returned partial evidence because coverage or extraction quality is below the preferred threshold."
+    ],
+    "provenance": [
+      {
+        "source": "openalex",
+        "endpoint": "search",
+        "timestamp": "2026-10-14T10:04:19.096Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "semantic_scholar",
+        "endpoint": "search",
+        "timestamp": "2026-10-14T10:04:19.096Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "arxiv",
+        "endpoint": "search",
+        "timestamp": "2026-10-14T10:04:19.096Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "pubmed",
+        "endpoint": "search",
+        "timestamp": "2026-10-14T10:04:19.096Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "core",
+        "endpoint": "search",
+        "timestamp": "2026-10-14T10:04:19.096Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      }
+    ],
+    "meta": {
+      "version": "0.1.10"
+    },
+    "data": {
+      "map": {
+        "query": "transboundary environmental harm international law",
+        "depth": 1,
+        "papers": [
+          {
+            "id": "doi:10.69612/upujsd-2026-21-023",
+            "openAlexId": "W7203579758",
+            "title": "EFFECTIVENESS OF INTERNATIONAL ENVIRONMENTAL LAW IN ADDRESSING TRANSBOUNDARY HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "abstract": "Environmental harm is constitutively indifferent to political boundaries. Yet the mechanisms through which international law purports to address transboundary environmental damage remain fragmented, asymmetrically enforced, and ill-suited to the structural complexity of contemporary challenges. Beginning from the foundational architecture of the Trail Smelter Arbitration (1941)[1] and the Rio Declaration on Environment and Development (1992)[2], the article evaluates whether the no-harm rule and the polluter pay principle the twin pillars of IEL accountability remain adequate to modern environmental governance. The article employs doctrinal research and analytic methods to examine the effectiveness of international environmental law (IEL) in addressing transboundary environmental harm and advancing environmental justice across three contemporary dimensions climate-induced loss and damage, cross-border pollution, and the environmental impacts of multinational corporations. The article opines that despite considerable maturity in the normative architecture of IEL, particularly in light of the ICJ Advisory Opinion on Obligations of States in Respect of Climate Change,[3] the Loss and Damage Fund operationalised at COP28;[4] the emerging transnational influenced Uganda’s domestic environmental framework under the National Environment Act 2019 and the constitutional right to a clean and healthy environment under Article 39 of the Constitution of Uganda;[5] as well as judicial enforcements in Advocates Coalition for Development and Environment (ACODE) v Attorney General[6] and Green watch (U) Ltd v Uganda Electricity Transmission Company Ltd and Attorney General;[7] the contemporary environmental challenges arising from oil development in the Albertine Graben and the East African Crude Oil Pipeline;[8] and the transboundary implications of environmental degradation within the Nile basin;[9] a structural enforcement deficit, chronic attribution difficulties, and a politically entrenched resistance to compensatory liability collectively undermine the transformative potential of IEL. The article concludes that environmental justice demands not merely incremental normative elaboration but a fundamental reconfiguration of international accountability structures.",
+            "year": 2026,
+            "venue": "Uganda Pentecostal University Journal of Sustainable Development",
+            "doi": "10.69612/upujsd-2026-21-023",
+            "citationCount": 0,
+            "referenceCount": 7,
+            "url": "https://openalex.org/W7203579758",
+            "pdfUrl": "https://articles.upu.ac.ug/index.php/upu-journal-for-sustainable-deve/article/download/23/22",
+            "openAccess": true,
+            "authors": [
+              {
+                "id": "A5146608644",
+                "name": "Tracy Babirye",
+                "institution": "Victoria University"
+              },
+              {
+                "id": "A5017703705",
+                "name": "O. O. Aguda",
+                "institution": "University of Ibadan"
+              },
+              {
+                "id": "A5066242882",
+                "name": "Esther Apio",
+                "institution": "Victoria University"
+              },
+              {
+                "id": "A5147287566",
+                "name": "Komakech Allex",
+                "institution": "Uganda Pentecostal University"
+              },
+              {
+                "id": "A5146602124",
+                "name": "David Wanbogo",
+                "institution": "Victoria University"
+              },
+              {
+                "id": "A5143482978",
+                "name": "Moses Mundeke",
+                "institution": "Victoria University"
+              },
+              {
+                "id": "A5146726569",
+                "name": "Julian Atwine",
+                "institution": "Victoria University"
+              },
+              {
+                "id": "A5146721281",
+                "name": "Hope Namisi",
+                "institution": "Victoria University"
+              },
+              {
+                "id": "A5146852284",
+                "name": "Patricia Ozitiru",
+                "institution": "Victoria University"
+              },
+              {
+                "id": "A5110715554",
+                "name": "Maria Ndagire",
+                "institution": "Victoria University"
+              }
+            ],
+            "institutions": [
+              "Victoria University",
+              "University of Ibadan",
+              "Victoria University",
+              "Uganda Pentecostal University",
+              "Victoria University",
+              "Victoria University",
+              "Victoria University",
+              "Victoria University",
+              "Victoria University",
+              "Victoria University"
+            ],
+            "topics": [
+              "Environmental law",
+              "Environmental justice",
+              "Political science",
+              "Harm",
+              "Law",
+              "Environmental studies",
+              "Accountability",
+              "National Environmental Policy Act",
+              "Constitution",
+              "Enforcement"
+            ],
+            "fields": [
+              "Environmental law",
+              "Environmental justice",
+              "Political science",
+              "Harm",
+              "Law",
+              "Environmental studies",
+              "Accountability",
+              "National Environmental Policy Act",
+              "Constitution",
+              "Enforcement"
+            ],
+            "sourcePriority": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "doi:10.22054/qjpl.2017.7786",
+            "openAlexId": "W2754015297",
+            "title": "Compensation for Environmental Damages according to the Draft Principles on the Allocation of Loss in the Case of Transboundary Harm Arising out of Hazardous Activities Adopted by International Law Commission (2006)",
+            "abstract": "Compensation of transboundary environmental damages, especially in the case of hazardous activities is one of the complex issues of international environmental law. Sometimes in spite of taking all preventive measures, some authorized and legitimate activities of States that are generally dangerous can cause irreparable damages to other subjects of international law and especially to the environment. For as much as these activities are not prohibited, the traditional systems of civil responsibility are not effective when dealing with the compensation of environmental damages. Therefore, the development and codification of particular system of compensation for environmental damages is inevitable. The result of international community's effort in this context is the approval of draft of International Law Commission titled Draft Principles on the Allocation of Loss in the Case of Transboundary Harm Arising out of Hazardous Activities, with Commentaries 2006” declaring that the State is responsible and obliged to prevent and the operator of hazardous activity is obliged for compensation of the damages under circumstances to commit such acts",
+            "year": 2017,
+            "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "doi": "10.22054/qjpl.2017.7786",
+            "citationCount": 0,
+            "referenceCount": 0,
+            "url": "https://openalex.org/W2754015297",
+            "pdfUrl": "https://doaj.org/article/4100be0e4a0141b488bae277da071885",
+            "openAccess": true,
+            "authors": [
+              {
+                "name": "Atiyeh Shah hosseini",
+                "institution": "University of Qom"
+              },
+              {
+                "name": "Ali Mashhadi",
+                "institution": "University of Qom"
+              }
+            ],
+            "institutions": [
+              "University of Qom",
+              "University of Qom"
+            ],
+            "topics": [
+              "Damages",
+              "Hazardous waste",
+              "Harm",
+              "Commission",
+              "Compensation (psychology)",
+              "Law",
+              "Environmental science",
+              "Political science",
+              "Operations research",
+              "Engineering"
+            ],
+            "fields": [
+              "Damages",
+              "Hazardous waste",
+              "Harm",
+              "Commission",
+              "Compensation (psychology)",
+              "Law",
+              "Environmental science",
+              "Political science",
+              "Operations research",
+              "Engineering"
+            ],
+            "sourcePriority": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "doi:10.12957/rqi.2019.31294",
+            "openAlexId": "W2910738348",
+            "title": "TRANSBOUNDARY ENVIRONMENTAL HARM: AN ANALYSIS OF THE CIVIL LIABILITY BASED ON THE ENVIRONMENTAL INTERNATIONAL LAW AND THE THEORY OF GAMES",
+            "abstract": "The aim of this study is to analyze the civil liability for transboundary environmental damage (or bordering) in the operative relationship of causes, using international analytical tools of the game theory and international standards of environmental law (generally, treaties). An international cooperation of sovereign States on the global implementation of a healthy and balanced environment is claimed. By linking environmental damage with international environmental law and the theory of games, the text focuses on the strategic that will be defined by States, in order to prevent, or not, possible losses, regarding the polluter pays principle. Keywords: Transboundary environmental damage; Civil responsibility; International environmental law; Game theory; Polluter pays principle. Resumo O objetivo deste estudo é analisar a responsabilidade civil pelo dano ambiental transfronteiriço (ou fronteiriço) na relação decisória dos causadores utilizando o instrumental analítico da teoria dos jogos e normas internacionais de direito ambiental (em geral, tratados). Defende-se uma cooperação internacional dos Estados soberanos relativa à concretização global de um meio ambiente sadio e equilibrado. Ao relacionar o dano ambiental com o direito ambiental internacional e a teoria dos jogos, o texto centra-se na delimitação estratégica que os Estados tomarão para se resguardar ou não de possíveis prejuízos em torno do princípio do poluidor-pagador. Palavras-chave: Dano ambiental transfronteiriço; Responsabilidade civil; Direito ambiental internacional; Teoria dos jogos; Princípio do poluidor-pagador.",
+            "year": 2019,
+            "venue": "REVISTA QUAESTIO IURIS",
+            "doi": "10.12957/rqi.2019.31294",
+            "citationCount": 0,
+            "referenceCount": 0,
+            "url": "https://openalex.org/W2910738348",
+            "pdfUrl": "https://www.e-publicacoes.uerj.br/index.php/quaestioiuris/article/download/31294/28027",
+            "openAccess": true,
+            "authors": [
+              {
+                "id": "A5089109106",
+                "name": "Joedson de Souza Delgado",
+                "institution": "University Center of Brasília"
+              },
+              {
+                "id": "A5085865075",
+                "name": "Ivo Teixeira Gico Junior",
+                "institution": "University Center of Brasília"
+              }
+            ],
+            "institutions": [
+              "University Center of Brasília",
+              "University Center of Brasília"
+            ],
+            "topics": [
+              "Environmental law",
+              "Harm",
+              "Welfare economics",
+              "Political science",
+              "Liability",
+              "Sovereignty",
+              "Order (exchange)",
+              "Legal liability",
+              "Law",
+              "Law and economics"
+            ],
+            "fields": [
+              "Environmental law",
+              "Harm",
+              "Welfare economics",
+              "Political science",
+              "Liability",
+              "Sovereignty",
+              "Order (exchange)",
+              "Legal liability",
+              "Law",
+              "Law and economics"
+            ],
+            "sourcePriority": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "doi:10.1007/978-3-031-13264-3",
+            "title": "Corporate Liability for Transboundary Environmental Harm ::An International and Transnational Perspective /",
+            "abstract": "This open access book aims to elaborate on the legal prerequisites to establish the liability of corporations for transboundary environmental harm, not only by identifying existing liability rules, principles and standards but also by analysing their potential for further legal development. The authors consider international and transboundary liability law to currently be an underutilised tool for international environmental protection. The book seeks to address this by exploring what is needed in terms of legislative action and identifying options for judicial pliability, thereby providing an important legal contribution in furthering the development of an effective international and transnational environmental liability law regime",
+            "year": 2022,
+            "venue": "",
+            "doi": "10.1007/978-3-031-13264-3",
+            "citationCount": 14,
+            "url": "https://core.ac.uk/download/552147568.pdf",
+            "pdfUrl": "https://core.ac.uk/download/552147568.pdf",
+            "openAccess": false,
+            "authors": [
+              {
+                "id": "A5064587767",
+                "name": "Peter Gailhofer"
+              },
+              {
+                "name": "David Krebs"
+              },
+              {
+                "id": "A5065137012",
+                "name": "Alexander Proelß",
+                "institution": "Universität Hamburg"
+              },
+              {
+                "id": "A5012375336",
+                "name": "Kirsten Schmalenbach",
+                "institution": "University of Salzburg"
+              },
+              {
+                "id": "A5016221571",
+                "name": "Roda Verheyen"
+              }
+            ],
+            "institutions": [
+              "Universität Hamburg",
+              "University of Salzburg"
+            ],
+            "topics": [
+              "Harm",
+              "Liability",
+              "Business",
+              "Environmental planning",
+              "Environmental science",
+              "Political science",
+              "Law",
+              "Accounting"
+            ],
+            "fields": [
+              "Harm",
+              "Liability",
+              "Business",
+              "Environmental planning",
+              "Environmental science",
+              "Political science",
+              "Law",
+              "Accounting"
+            ],
+            "sourcePriority": [
+              "openalex",
+              "core"
+            ]
+          },
+          {
+            "id": "doi:10.1017/cbo9780511511394",
+            "title": "Transboundary harm in international law ::lessons from the Trail Smelter arbitration /",
+            "abstract": "Originally published in 2006, this book reveals the many harms which flow across the ever-more porous sovereign borders of a globalising world. These harms expose weaknesses in the international legal regime built on sovereignty of nation states. Using the Trail Smelter Arbitration, one of the most cited cases in international environmental law, this book explores the changing nature of state responses to transboundary harm. Taking a critical approach, the book examines the arbitration's influence on international law generally, and international environmental law specifically. In particular, the book explores whether there are lessons from Trail Smelter that are useful for resolving transboundary challenges confronting the international community. The book collects the commentary of a distinguished set of international law scholars who consider the history of the Trail Smelter arbitration, its significance for international environmental law, its broader relationship to international law, and its resonance in fields beyond the environment.",
+            "year": 2017,
+            "venue": "",
+            "doi": "10.1017/cbo9780511511394",
+            "citationCount": 51,
+            "url": "https://openalex.org/W2057077530",
+            "pdfUrl": "",
+            "openAccess": false,
+            "authors": [
+              {
+                "name": {
+                  "name": "Bratspies, Rebecca M.,"
+                }
+              },
+              {
+                "name": {
+                  "name": "Miller, Russell A.,"
+                }
+              }
+            ],
+            "institutions": [],
+            "topics": [
+              "International law",
+              "Harm",
+              "Sovereignty",
+              "Political science",
+              "Environmental law",
+              "Law",
+              "International community",
+              "Arbitration",
+              "International arbitration",
+              "State responsibility"
+            ],
+            "fields": [
+              "International law",
+              "Harm",
+              "Sovereignty",
+              "Political science",
+              "Environmental law",
+              "Law",
+              "International community",
+              "Arbitration",
+              "International arbitration",
+              "State responsibility"
+            ],
+            "sourcePriority": [
+              "openalex",
+              "core"
+            ]
+          }
+        ],
+        "keyClaims": [],
+        "methods": [
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "method": "The discipline has, since the mid- twentieth century, generated a vast and sophisticated normative architecture treaties, customary rules, soft-law instruments, tribunal decisions, and multilateral institutions ostensibly designed to hold states accountable for the environmental consequences of their activities."
+          },
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "method": "The relationship between the sophistication of the normative framework and the quality of environmental outcomes is, at best, attenuated."
+          },
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "method": "The legal architecture designed to address these harms, however, remains organised primarily around the state as the unit of obligation, the bilateral relationship as the paradigm of dispute, and consent as the basis of binding obligation."
+          },
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "method": "Where harm is diffuse, multi-causal, historically cumulative, and inflicted by private actors insulated behind complex corporate structures, this architecture proves inadequate."
+          },
+          {
+            "paperId": "doi:10.1017/cbo9780511511394",
+            "method": "Taking a critical approach, the book examines the arbitration's influence on international law generally, and international environmental law specifically."
+          }
+        ],
+        "limitations": [
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "limitation": "The legal architecture designed to address these harms, however, remains organised primarily around the state as the unit of obligation, the bilateral relationship as the paradigm of dispute, and consent as the basis of binding obligation."
+          },
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "limitation": "Scholars have rightly noted the limitations of the Trail Smelter paradigm."
+          },
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "limitation": "The Rio Declaration’s most significant achievement, however, may lie in the register of justice rather than law."
+          },
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "limitation": "The framework it articulated was, however, only as strong as the political will to implement it."
+          }
+        ],
+        "consensus": [],
+        "contradictions": [],
+        "influence": [
+          {
+            "paperId": "doi:10.1017/cbo9780511511394",
+            "score": 17.16
+          },
+          {
+            "paperId": "doi:10.1007/978-3-031-13264-3",
+            "score": 11.76
+          },
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "score": 0
+          },
+          {
+            "paperId": "doi:10.22054/qjpl.2017.7786",
+            "score": 0
+          },
+          {
+            "paperId": "doi:10.12957/rqi.2019.31294",
+            "score": 0
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "arguments": {
+    "paper_id": "doi:10.26650/annales.2023.73.0001",
+    "limit": 5
+  },
+  "response": {
+    "status": "error",
+    "degraded": true,
+    "warnings": [
+      "Semantic similarity requires SEMANTIC_SCHOLAR_API_KEY for reliable Semantic Scholar recommendations."
+    ],
+    "provenance": [
+      {
+        "source": "semantic_scholar",
+        "endpoint": "recommendations",
+        "timestamp": "2026-10-14T10:06:23.289Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      }
+    ],
+    "meta": {
+      "version": "0.1.10"
+    },
+    "data": {
+      "papers": []
+    }
+  }
+}
