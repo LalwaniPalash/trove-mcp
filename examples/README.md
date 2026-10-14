@@ -22,15 +22,18 @@ International Environmental Law seminar in which Trove was first used.
 
 | Step | Tool | Status | What the response shows |
 |---|---|---|---|
-| 1 | `search_papers` | `partial` | Ten relevant papers from 1986 to 2026. Trove queried five sources. Only OpenAlex and CORE records reached the top ten after ranking. Semantic Scholar returned HTTP 429, and the envelope says so. |
+| 1 | `search_papers` | `partial` | Ten relevant papers from 1986 to 2026. Trove queried five sources. Semantic Scholar returned HTTP 429, as it often does without a key, and the envelope says so. |
 | 2 | `get_paper` | `ok` | The top result resolved to one canonical record. |
-| 3 | `get_full_text` | `partial` | Unpaywall had no PDF and CORE returned HTTP 500. Trove reports "No full-text PDF source could be resolved." and returns no text. |
-| 4 | `build_literature_map` | `partial` | Methods and limitations from five papers, each sentence tagged with its source paper ID. Four full-text fetches timed out, and the map says its evidence is below the preferred threshold. |
-| 5 | `get_trending_papers` | `partial`, `mode = unavailable` | A new database has no citation history. Trove seeds today's counts and refuses to rank by total citations. |
-| 6 | `find_similar_papers` | `error` | Without `SEMANTIC_SCHOLAR_API_KEY`, Trove refuses instead of falling back to keyword overlap. |
+| 3 | `get_full_text` | `partial` | The first paper's listed PDF location is an HTML page, not a PDF, and neither Unpaywall nor CORE has a copy. Trove returns no text and says why. |
+| 4 | `get_full_text` | `ok` | The next paper's open-access PDF, found through its OpenAlex location, read in 20 sections. |
+| 5 | `build_literature_map` | `partial` | Claims, methods and limitations from five papers, each sentence tagged with its source paper ID. Two publisher servers were too slow to answer in time, so the map marks its evidence as below the preferred threshold. |
+| 6 | `get_trending_papers` | `partial`, `mode = unavailable` | A new database has no citation history. Trove seeds today's counts and refuses to rank by total citations. |
+| 7 | `find_similar_papers` | `error` | Without `SEMANTIC_SCHOLAR_API_KEY`, Trove refuses instead of falling back to keyword overlap. |
 
-Only one call returned a clean `ok`, and that is the point of the example. Every gap,
-including provider rate limits and server errors, appears in `warnings` and
-`provenance`, so the assistant can tell the researcher what it could not check.
-Set `SEMANTIC_SCHOLAR_API_KEY`, run `trove-mcp sync` on two different days, and steps 5
-and 6 start returning results.
+The `partial` and `error` results above come from the outside world: a rate-limited
+provider, broken or slow publisher links, a database with no history yet, and a
+missing key. Every one of them is named in `warnings` and `provenance`, so the
+assistant can tell the researcher what it could not check. With
+`SEMANTIC_SCHOLAR_API_KEY` set, step 7 returns recommendations and step 1 is far less
+likely to be rate-limited. After `trove-mcp sync` has run on two different days,
+step 6 can rank by measured citation growth.

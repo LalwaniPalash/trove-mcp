@@ -74,18 +74,23 @@ await client.connect(transport);
 try {
   // 1. Find candidate literature.
   const search = await call("search_papers", { query, filters: { limit: 10 } });
-  const results: Array<{ paper: { id: string; title: string; openAccess?: boolean } }> = search?.data?.results ?? [];
+  const results: Array<{ paper: { id: string; title: string; pdfUrl?: string } }> = search?.data?.results ?? [];
   if (!results.length) {
     throw new Error("search_papers returned no results; try a broader query.");
   }
   const top = results[0].paper;
-  const openPaper = results.find((r) => r.paper.openAccess)?.paper ?? top;
+  // Results whose index lists an open-access PDF location, in rank order.
+  const readable = results.filter((r) => r.paper.pdfUrl).map((r) => r.paper).slice(0, 4);
 
   // 2. Resolve the top result to its canonical record with every known identifier.
   await call("get_paper", { identifier: top.id });
 
-  // 3. Read the first open-access result through the legal full-text chain.
-  await call("get_full_text", { identifier: openPaper.id });
+  // 3. Read papers through the legal full-text chain, moving to the next one when a
+  //    PDF cannot be obtained, as a researcher would.
+  for (const paper of readable.length ? readable : [top]) {
+    const fullText = await call("get_full_text", { identifier: paper.id });
+    if (fullText?.status === "ok") break;
+  }
 
   // 4. Build an extractive evidence map: claims, methods and limitations, each tied to a paper ID.
   await call("build_literature_map", { query, depth: 1 });

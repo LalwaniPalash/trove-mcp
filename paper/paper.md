@@ -154,7 +154,8 @@ comparison. I chose rules that a reviewer can read over a trained model. This
 lowers recall, but every output can be traced back to its source.
 
 Full text comes only from legal open-access sources, tried in the order arXiv,
-Unpaywall and CORE. Rate limits from upstream services are handled with
+the PDF location recorded by OpenAlex, Unpaywall and CORE. A download counts only
+if it is a real PDF, and a CORE record is used only when its DOI matches exactly. Rate limits from upstream services are handled with
 `Retry-After`-based waiting and reported as warnings.
 
 The test suite checks these contracts directly. Along with unit tests for

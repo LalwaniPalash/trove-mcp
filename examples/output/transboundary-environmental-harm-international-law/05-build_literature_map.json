@@ -8,10 +8,11 @@
     "degraded": true,
     "warnings": [
       "semantic_scholar search failed: Upstream semantic_scholar error (429) {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}",
-      "full-text fetch failed for doi:10.22054/qjpl.2017.7786: literature-map per-paper timeout for doi:10.22054/qjpl.2017.7786",
+      "Unpaywall returned no PDF for this DOI.",
+      "CORE fallback returned no usable PDF.",
+      "No full-text PDF source could be resolved.",
       "full-text fetch failed for doi:10.12957/rqi.2019.31294: literature-map per-paper timeout for doi:10.12957/rqi.2019.31294",
       "full-text fetch failed for doi:10.1007/978-3-031-13264-3: literature-map per-paper timeout for doi:10.1007/978-3-031-13264-3",
-      "full-text fetch failed for doi:10.1017/cbo9780511511394: literature-map per-paper timeout for doi:10.1017/cbo9780511511394",
       "build_literature_map reached 45s deadline; returned partial structured map.",
       "Literature map returned partial evidence because coverage or extraction quality is below the preferred threshold."
     ],
@@ -19,7 +20,7 @@
       {
         "source": "openalex",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:04:19.096Z",
+        "timestamp": "2026-10-14T10:21:16.951Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -27,7 +28,7 @@
       {
         "source": "semantic_scholar",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:04:19.096Z",
+        "timestamp": "2026-10-14T10:21:16.951Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -35,7 +36,7 @@
       {
         "source": "arxiv",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:04:19.096Z",
+        "timestamp": "2026-10-14T10:21:16.951Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -43,7 +44,7 @@
       {
         "source": "pubmed",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:04:19.096Z",
+        "timestamp": "2026-10-14T10:21:16.951Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -51,7 +52,7 @@
       {
         "source": "core",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:04:19.096Z",
+        "timestamp": "2026-10-14T10:21:16.951Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -171,61 +172,6 @@
             ]
           },
           {
-            "id": "doi:10.22054/qjpl.2017.7786",
-            "openAlexId": "W2754015297",
-            "title": "Compensation for Environmental Damages according to the Draft Principles on the Allocation of Loss in the Case of Transboundary Harm Arising out of Hazardous Activities Adopted by International Law Commission (2006)",
-            "abstract": "Compensation of transboundary environmental damages, especially in the case of hazardous activities is one of the complex issues of international environmental law. Sometimes in spite of taking all preventive measures, some authorized and legitimate activities of States that are generally dangerous can cause irreparable damages to other subjects of international law and especially to the environment. For as much as these activities are not prohibited, the traditional systems of civil responsibility are not effective when dealing with the compensation of environmental damages. Therefore, the development and codification of particular system of compensation for environmental damages is inevitable. The result of international community's effort in this context is the approval of draft of International Law Commission titled Draft Principles on the Allocation of Loss in the Case of Transboundary Harm Arising out of Hazardous Activities, with Commentaries 2006” declaring that the State is responsible and obliged to prevent and the operator of hazardous activity is obliged for compensation of the damages under circumstances to commit such acts",
-            "year": 2017,
-            "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
-            "doi": "10.22054/qjpl.2017.7786",
-            "citationCount": 0,
-            "referenceCount": 0,
-            "url": "https://openalex.org/W2754015297",
-            "pdfUrl": "https://doaj.org/article/4100be0e4a0141b488bae277da071885",
-            "openAccess": true,
-            "authors": [
-              {
-                "name": "Atiyeh Shah hosseini",
-                "institution": "University of Qom"
-              },
-              {
-                "name": "Ali Mashhadi",
-                "institution": "University of Qom"
-              }
-            ],
-            "institutions": [
-              "University of Qom",
-              "University of Qom"
-            ],
-            "topics": [
-              "Damages",
-              "Hazardous waste",
-              "Harm",
-              "Commission",
-              "Compensation (psychology)",
-              "Law",
-              "Environmental science",
-              "Political science",
-              "Operations research",
-              "Engineering"
-            ],
-            "fields": [
-              "Damages",
-              "Hazardous waste",
-              "Harm",
-              "Commission",
-              "Compensation (psychology)",
-              "Law",
-              "Environmental science",
-              "Political science",
-              "Operations research",
-              "Engineering"
-            ],
-            "sourcePriority": [
-              "openalex"
-            ]
-          },
-          {
             "id": "doi:10.12957/rqi.2019.31294",
             "openAlexId": "W2910738348",
             "title": "TRANSBOUNDARY ENVIRONMENTAL HARM: AN ANALYSIS OF THE CIVIL LIABILITY BASED ON THE ENVIRONMENTAL INTERNATIONAL LAW AND THE THEORY OF GAMES",
@@ -277,6 +223,60 @@
               "Legal liability",
               "Law",
               "Law and economics"
+            ],
+            "sourcePriority": [
+              "openalex"
+            ]
+          },
+          {
+            "id": "doi:10.22054/qjpl.2017.7786",
+            "openAlexId": "W2754015297",
+            "title": "Compensation for Environmental Damages according to the Draft Principles on the Allocation of Loss in the Case of Transboundary Harm Arising out of Hazardous Activities Adopted by International Law Commission (2006)",
+            "abstract": "Compensation of transboundary environmental damages, especially in the case of hazardous activities is one of the complex issues of international environmental law. Sometimes in spite of taking all preventive measures, some authorized and legitimate activities of States that are generally dangerous can cause irreparable damages to other subjects of international law and especially to the environment. For as much as these activities are not prohibited, the traditional systems of civil responsibility are not effective when dealing with the compensation of environmental damages. Therefore, the development and codification of particular system of compensation for environmental damages is inevitable. The result of international community's effort in this context is the approval of draft of International Law Commission titled Draft Principles on the Allocation of Loss in the Case of Transboundary Harm Arising out of Hazardous Activities, with Commentaries 2006” declaring that the State is responsible and obliged to prevent and the operator of hazardous activity is obliged for compensation of the damages under circumstances to commit such acts",
+            "year": 2017,
+            "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
+            "doi": "10.22054/qjpl.2017.7786",
+            "citationCount": 0,
+            "referenceCount": 0,
+            "url": "https://openalex.org/W2754015297",
+            "openAccess": true,
+            "authors": [
+              {
+                "name": "Atiyeh Shah hosseini",
+                "institution": "University of Qom"
+              },
+              {
+                "name": "Ali Mashhadi",
+                "institution": "University of Qom"
+              }
+            ],
+            "institutions": [
+              "University of Qom",
+              "University of Qom"
+            ],
+            "topics": [
+              "Damages",
+              "Hazardous waste",
+              "Harm",
+              "Commission",
+              "Compensation (psychology)",
+              "Law",
+              "Environmental science",
+              "Political science",
+              "Operations research",
+              "Engineering"
+            ],
+            "fields": [
+              "Damages",
+              "Hazardous waste",
+              "Harm",
+              "Commission",
+              "Compensation (psychology)",
+              "Law",
+              "Environmental science",
+              "Political science",
+              "Operations research",
+              "Engineering"
             ],
             "sourcePriority": [
               "openalex"
@@ -399,7 +399,14 @@
             ]
           }
         ],
-        "keyClaims": [],
+        "keyClaims": [
+          {
+            "paperId": "doi:10.69612/upujsd-2026-21-023",
+            "claim": "The article concludes that environmental justice demands not merely incremental normative elaboration but a fundamental reconfiguration of international accountability structures.",
+            "confidence": 0.55,
+            "evidence": "full_text"
+          }
+        ],
         "methods": [
           {
             "paperId": "doi:10.69612/upujsd-2026-21-023",
@@ -441,7 +448,9 @@
           }
         ],
         "consensus": [],
-        "contradictions": [],
+        "contradictions": [
+          "the article concludes that environmental justice demands not merely incremental normative elaboration but a fundamental reconfiguration of international accountability structures."
+        ],
         "influence": [
           {
             "paperId": "doi:10.1017/cbo9780511511394",
@@ -456,11 +465,11 @@
             "score": 0
           },
           {
-            "paperId": "doi:10.22054/qjpl.2017.7786",
+            "paperId": "doi:10.12957/rqi.2019.31294",
             "score": 0
           },
           {
-            "paperId": "doi:10.12957/rqi.2019.31294",
+            "paperId": "doi:10.22054/qjpl.2017.7786",
             "score": 0
           }
         ]

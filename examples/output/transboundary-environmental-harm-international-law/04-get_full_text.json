@@ -1,0 +1,173 @@
+{
+  "arguments": {
+    "identifier": "doi:10.69612/upujsd-2026-21-023"
+  },
+  "response": {
+    "status": "ok",
+    "degraded": false,
+    "warnings": [],
+    "provenance": [
+      {
+        "source": "openalex",
+        "endpoint": "cache:paper",
+        "timestamp": "2026-10-14T10:21:10.909Z",
+        "cached": true,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "openalex",
+        "endpoint": "fulltext:oa-location",
+        "timestamp": "2026-10-14T10:21:14.054Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "openalex",
+        "endpoint": "fulltext:resolve",
+        "timestamp": "2026-10-14T10:21:14.055Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      }
+    ],
+    "meta": {
+      "version": "0.1.10"
+    },
+    "data": {
+      "fullText": {
+        "paperId": "doi:10.69612/upujsd-2026-21-023",
+        "source": "openalex",
+        "sourceUrl": "https://articles.upu.ac.ug/index.php/upu-journal-for-sustainable-deve/article/download/23/22",
+        "availability": "full_text",
+        "truncation": {
+          "truncated": true,
+          "maxChunks": 20,
+          "returnedChunks": 20
+        },
+        "chunks": [
+          {
+            "index": 0,
+            "text": "UPUJSD1 of 14 UPU Journal of Sustainable DevelopmentDOI: https://doi.org/10.69612/upujsd-2026-21-023 Trail Smelter Arbitration (United States v Canada)(1941) 3 RIAA 1905 Rio Declaration on Environment and Development (adopted 14 June 1992) UN Doc A/CONF.151/26 (Vol I), Principle 2 Obligations of States in Respect of Climate Change(Advisory Opinion) [2025] ICJ (forthcoming/most recent advisory proceedings reference) UNFCCC, ‘Outcome of the First Global Stocktake and Operationalisation of the Loss and Damage Fund’ (COP28, Dubai, Constitution of the Republic of Uganda 1995, art 39; National Environment Act 2019 Advocates Coalition for Development and Environment (ACODE) v Attorney GeneralConstitutional Petition No 0100 of 2004 (High Court of Uganda) Greenwatch (U) Ltd v Uganda Electricity Transmission Company Ltd and Attorney GeneralMisc Cause No 140 of 2001 (High Court of Uganda). TotalEnergies,Tilenga Project Environmental and Social Impact Assessment Report(2020); Advocates Coalition for Development and Environment (ACODE),Oil and Gas Development in Uganda(2019) Convention on the Law of the Non-Navigational Uses of International Watercourses (adopted 21 May 1997, entered into force 17 August 2014) 2999 UNTS 77 Uganda Pentecostal University Journal of Sustainable Development Journal DOI Prefix: 10.69612 Journal ISSN: 3078-2384 Issue 2",
+            "tokenEstimate": 339
+          },
+          {
+            "index": 1,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "Article Authors: Tracy Babirye, O. O. Aguda, Esther Apio, Komakech Allex, David Wanbogo, Moses Mundeke, Julian Atwine, Hope Namisi, Patricia Ozitiru & Maria Ndagire",
+            "tokenEstimate": 41
+          },
+          {
+            "index": 2,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "Environmental harm is constitutively indifferent to political boundaries. Yet the mechanisms through which international law purports to address transboundary environmental damage remain fragmented, asymmetrically enforced, and ill-suited to the structural complexity of contemporary challenges. Beginning from the foundational architecture of the Trail Smelter Arbitration (1941) and the Rio Declaration on Environment and Development , the article evaluates whether the no-harm rule and the polluter pay principle the twin pillars of IEL accountability remain adequate to modern environmental governance. The article employs doctrinal research and analytic methods to examine the effectiveness of international environmental law (IEL) in addressing transboundary environmental harm and advancing environmental justice across three contemporary dimensions climate-induced loss and damage, cross-border pollution, and the environmental impacts of multinational corporations. The article opines that despite considerable maturity in the normative architecture of IEL, particularly in light of the ICJ Advisory Opinion on Obligations of States in Respect of Climate Change, the Loss and Damage Fund operationalised at COP28; the emerging transnational influenced Uganda’s domestic environmental framework under the National Environment Act 2019 and the constitutional right to a clean and healthy environment under Article 39 of the Constitution of Uganda; as well as judicial enforcements in Advocates Coalition for Development and Environment (ACODE) v Attorney General and Green watch (U) Ltd v Uganda Electricity Transmission Company Ltd and Attorney General; the contemporary environmental challenges arising from oil development in the Albertine Graben and the East African Crude Oil Pipeline; an",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 3,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "d the transboundary implications of environmental degradation within the Nile basin; a structural enforcement deficit, chronic attribution difficulties, and a politically entrenched resistance to compensatory liability collectively undermine the transformative potential of IEL. The article concludes that environmental justice demands not merely incremental normative elaboration but a fundamental reconfiguration of international accountability structures. Keywords:Transboundary harm, Environmental Justice, Effectiveness of International Environmental Law, Contemporary challenges",
+            "tokenEstimate": 146
+          },
+          {
+            "index": 4,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "UPUJSD2 of 14 UPU Journal of Sustainable DevelopmentDOI: https://doi.org/10.69612/upujsd-2026-21-023 Philippe Sands and Jacqueline Peel,Principles of International Environmental Law(4th edn, CUP 2018) Intergovernmental Panel on Climate Change (IPCC),Climate Change 2023: Synthesis Report(2023) ibid, Ministry of Water and Environment (Uganda),National Climate Change Policy(2015) Daniel Bodansky, Jutta Brunnée and Lavanya Rajamani,International Climate Change Law(OUP 2017) Trail Smelter Arbitration (United States v Canada)(1941) 3 RIAA 1905 Rio Declaration on Environment and Development (adopted 14 June 1992) UN Doc A/CONF.151/26 (Vol I) Trail Smelter Arbitration (United States v Canada)(1941) 3 RIAA 1905 Convention for the Settlement of Difficulties Arising from Operation of Smelter at Trail (US–Canada) (1935)",
+            "tokenEstimate": 205
+          },
+          {
+            "index": 5,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "There is a foundational irony at the heart of international environmental law. The discipline has, since the mid- twentieth century, generated a vast and sophisticated normative architecture treaties, customary rules, soft-law instruments, tribunal decisions, and multilateral institutions ostensibly designed to hold states accountable for the environmental consequences of their activities. Yet the communities most severely harmed by transboundary pollution, climate-induced loss and damage, and the environmental depredations of multinational corporations are, in practice, the least likely to secure accountability, compensation, or meaningful remediation. The relationship between the sophistication of the normative framework and the quality of environmental outcomes is, at best, attenuated. This article interrogates that gap. The problem is structural. Environmental harm is transnational by nature. Greenhouse gas emissions released from the factories of historically industrialised nations alter climatic patterns affecting agricultural systems; sulphur dioxide discharged in one state could produce acid deposition in another; and toxic effluents generated by multinational corporate activities may extend beyond the jurisdictional reach of any single court. The legal architecture designed to address these harms, however, remains organised primarily around the state as the unit of obligation, the bilateral relationship as the paradigm of dispute, and consent as the basis of binding obligation. Where harm is diffuse, multi-causal, historically cumulative, and inflicted by private actors insulated behind complex corporate structures, this architecture proves inadequate. While Part I of the article deals with Introduction, Part II analyses the foundational principles of IEL on tr",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 6,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "ansboundary harm, examining the Trail Smelter Arbitration and the Rio Declaration on Environment and Development. Part III evaluates IEL’s effectiveness across three contemporary challenges: climate-induced loss and damage, cross- border pollution, and multinational corporate environmental liability. Part IV assesses the adequacy of the no-harm rule and the polluter pays principle as operative legal instruments. Part V advances a reform agenda. The central argument is that the gap between IEL’s normative aspiration and its operational effectiveness is not accidental but reflects deep structural features of the international legal order, demanding that environmental justice necessities be addressed. PART II: THE FOUNDATIONAL ARCHITECTURE: TRAIL SMELTER AND RIO DECLARATION ON",
+            "tokenEstimate": 196
+          },
+          {
+            "index": 7,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "Trail Smelter Arbitration (1941); Sovereignty, Harm, and the Birth of the No-Harm Rule The Trail Smelter Arbitration between the United States and Canada remains the locus classicus of international law on transboundary environmental harm. A Canadian lead-zinc smelter in Trail, British Columbia emitted sulphur dioxide fumes that caused extensive damage to orchards, farms, and timber in the State of Washington. The Arbitral Tribunal, constituted under the 1935 Convention for the Settlement of Difficulties Arising from Operation of Smelter at Trail, issued its principal award in 1941. Its central holding has been quoted so often as to acquire the character of a constitutional text in IEL: Under the principles of international law, as well as of the law of the United States, no State has the right to use or permit the use of its territory in such a manner as to cause injury by fumes in or to the territory of another or the",
+            "tokenEstimate": 234
+          },
+          {
+            "index": 8,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "UPUJSD3 of 14 UPU Journal of Sustainable DevelopmentDOI: https://doi.org/10.69612/upujsd-2026-21-023 Trail Smelter(n 1) 1965 Ibid Philippe Sands, Jacqueline Peel, Adriana Fabra and Ruth MacKenzie, Principles of International Environmental Law (4th edn, CUP 2018) 199–202. Patricia Birnie, Alan Boyle and Catherine Redgwell, International Law and the Environment (3rd edn, OUP 2009) 143 Corfu Channel Case (United Kingdom v Albania) [1949] ICJ Rep 4, 22; Nuclear Tests Cases (Australia v France) [1974] ICJ Rep 253, 457 Gabčíkovo-Nagymaros Project (Hungary/Slovakia) [1997] ICJ Rep 7, para 53 Rio Declaration on Environment and Development (adopted 14 June 1992) UN Doc A/CONF.151/26 (Vol I) Philippe Sands and Jacqueline Peel,Principles of International Environmental Law(4th edn, CUP 2018) Rio Declaration on Environment and Development (1992) UN Doc A/CONF.151/26, Principle 2 ibid, Principles 7 and 11. See also Daniel Bodansky, ‘The United Nations Framework Convention on Climate Change: A Commentary’ (1993) 18 Yale Journal of International Law 451, 501 Rio Declaration (n 6) Principle 16. The OECD first articulated the PPP in its 1972 Guiding Principles Concerning International Economic Aspects of Environmental Policies: OECD Doc C(72)128 RioDeclaration(n6)Principle15;CartagenaProtocolonBiosafety(adopted29January2000)2226UNTS208,Preamble properties or persons therein, when the case is of serious consequence and the injury is established by clear and convincing evidence. The Tribunal ordered Canada to pay compensation for past damage and established a regulatory regime to control future emissions. The normative significance of the award was threefold. First, it affirmed that sovereignty does not confer an unlimited right to pollute: thesic utere tuo ut alienum non laedas( ) princip",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 9,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "le, drawn from domestic property law, was transposed to the inter-state plane. Second, it established that the state is internationally responsible for the environmental consequences of private industrial activities occurring within its territory. Third, it provided the template for reparation through compensation for demonstrated damage, grounding environmental liability in the general law of state responsibility. Scholars have rightly noted the limitations of the Trail Smelter paradigm. The Tribunal’s holding was carefully bounded: harm must be ‘serious’, causation must be established by ‘clear and convincing evidence, and the relationship is bilateral and point-to-point. These requirements, modest in the context of cross-border smelter fumes, become near-insuperable in the context of diffuse, multi-state, historically accumulated atmospheric greenhouse gas concentrations. As Birnie, Boyle and Redgwell observe, the Trail Smelter paradigm was ‘designed for bilateral, essentially territorial disputes’ and ‘does not easily translate to global commons problems’. Nevertheless, the Tribunal’s core holding was progressively affirmed and generalised. In Corfu Channel (1949) and the Nuclear Tests Cases (1974), the ICJ articulated a general obligation on states to ensure that activities within their territory do not cause damage to the rights of others. In Gabčíkovo-Nagymaros Project (1997), the Court confirmed that the obligation not to cause significant transboundary environmental harm had crystallised into a rule of customary international law. The Rio Declaration (1992): Normative Codification and the Justice Dimension The Rio Declaration on Environment and Development, adopted at the 1992 UN Conference on Environment and Development, marks the second constitutive moment of",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 10,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": " the modern IEL order. As a soft-law instrument, it does not create binding obligations; but its twenty-seven principles have exercised an influence on treaty-making and judicial reasoning disproportionate to their formal legal status. Principle 2 restates and expands Trail Smelter, by establishing that states have the sovereign right to exploit their own resources, and the responsibility to ensure that activities within their jurisdiction or control ‘do not cause damage to the environment of other States or of areas beyond the limits of national jurisdiction’. Principles 7 and 11 introduce the concept of Common But Differentiated Responsibilities (CBDR), acknowledging that developed states bear a greater share of responsibility for global environmental degradation by virtue of their accumulated emissions and greater technological and financial resources. Principle 16 embeds the polluter pays principle. Principle 15 enshrines the precautionary principle. Both were subsequently incorporated into binding treaty instruments: CBDR",
+            "tokenEstimate": 261
+          },
+          {
+            "index": 11,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "UPUJSD4 of 14 UPU Journal of Sustainable DevelopmentDOI: https://doi.org/10.69612/upujsd-2026-21-023 UNFCCC (1992) 1771 UNTS 107, Art 3(1); Paris Agreement (2015) 3156 UNTS, Art 2(2) Birnie, Boyle and Redgwell (n 3) 4 Paris Agreement (n 10) Art 4(2). On the deliberate choice of voluntarism, see Daniel Bodansky, ‘The Paris Climate Change Agreement: A New Hope?’ (2016) 110 AJIL 288, 289–291. UNFCCC, Decision 2/CP.27 and 2/CMA.4 (November 2022): the agenda item was formally premised as ‘based on cooperation and facilitation and [not] involving liability or compensation’ Madeleine McDonnell, ‘The COP27 Decision and Future Directions for Loss and Damage Finance’ (2023) 32(3) Review of European, Comparative and International Environmental Law 416, 418 UNFCCC, Decision 5/CMA.5, ‘Operationalization of the New Funding Arrangements, including a Fund, for Responding to Loss and Damage’ (December 2023), Appendix I Roda Verheyen, ‘Loss and Damage, Climate Victims, and International Climate Law: Looking Back, Looking Forward’ in the UNFCCC (1992) and Paris Agreement (2015) the precautionary principle in the Cartagena Protocol on Biosafety (2000). The Rio Declaration’s most significant achievement, however, may lie in the register of justice rather than law. By articulating CBDR, affirming the right to development alongside environmental responsibility, and situating environmental governance within the obligations owed to present and future generations, the Declaration embedded a distributive justice dimension in IEL that has animated the loss and damage debate ever since. The framework it articulated was, however, only as strong as the political will to implement it. The core tension, observed presciently by Birnie, Boyle and Redgwell, is that IEL suffers from treaty congestion, impl",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 12,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "ementation deficits and weak enforcement. Rio generated normative momentum; it could not generate compliance. PART III: CONTEMPORARY CHALLENGES, THREE CASE STUDIES IN THE LIMITS OF IEL A. Climate-Induced Loss and Damage: The Architecture of Non-Liability 1. The Structural Exclusion of Accountability Climate change is the most acute and structurally revealing test of IEL’s capacity to address transboundary harm. The Paris Agreement’s nationally determined contributions (NDC) system is built on voluntary pledges rather than legally binding emission reduction targets. This was a deliberate political compromise: the price of universal ratification was the exclusion of binding mitigation commitments. The result is that the primary legal mechanism for preventing transboundary climate harm relies on the good faith of states whose dominant economic interests lie in delaying the transition away from fossil fuels. The treatment of loss and damage those climate impacts that cannot be prevented through mitigation or adapted to through adjustment crystallises the accountability deficit most sharply. The COP27 decision confirmed that the loss and damage agenda item was premised as based on cooperation and facilitation and [not] involving liability or compensation. This language is the direct product of US and EU insistence that climate finance arrangements must not be characterised as compensation for internationally wrongful acts a characterisation that would trigger the law of state responsibility and potentially expose developed states to claims for the full measure of climate damages. The formal exclusion of liability does not eliminate the underlying legal arguments for compensation; it merely forecloses one avenue for pursuing them within the UNFCCC framework. 2. COP27 and COP2",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 13,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "8: Historic Breakthrough and Structural Inadequacy After three decades of demands from developing countries and small island states, a historic breakthrough was achieved at COP27 in November 2022. Parties agreed to establish new funding arrangements for loss and damage, creating a Transitional Committee of twenty-four members mandated to operationalise the fund by COP28. As McDonnell writes, the agreement represents a significant, historic win for developing countries and civil society. At COP28 in Dubai in December 2023, the Loss and Damage Fund was formally operationalised under the Financial Mechanism of the UNFCCC, with the World Bank serving as interim trustee for a period of four years. And yet, as Verheyen notes, ‘there remains much work to be done’. Total pledges by early 2025 stood at approximately USD",
+            "tokenEstimate": 206
+          },
+          {
+            "index": 14,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "UPUJSD5 of 14 UPU Journal of Sustainable DevelopmentDOI: https://doi.org/10.69612/upujsd-2026-21-023 (2023) Transnational Environmental Law 1, 4 Andrew Naylor and James Ford, ‘Vulnerability and Loss and Damage following the COP27 of the UN Framework Convention on Climate Change’ (2023) 23 Regional Environmental Change 38, 2. UNDP notes that developing countries face 15 times more natural disaster victims than developed nations See Paris Agreement (n 10) Art 8(1); COP27 Decision 2/CP.27 (n 13). The non-liability disclaimer was inserted at US insistence as a condition of agreement on the fund architecture ICJ, Advisory Opinion on Obligations of States in Respect of Climate Change (23 July 2025), para 73 (‘existential threat’) ICJ, Advisory Opinion on Obligations of States in Respect of Climate Change (23 July 2025), para 73 (‘existential threat’) ICJ Advisory Opinion (n 19) paras 184, 224, 241, 245 and operative paragraphs ibid, para 223: the climate treaty regime does not ‘expressly or implicitly exclude’ the application of general state responsibility rules ITLOS, Advisory Opinion on Climate Change and International Law (21 May 2024) Case No 31, para 232 Urgenda Foundation v State of the Netherlands(Ministry of Infrastructure and the Environment) (Supreme Court, 20 December 2019) ECLI:NL:HR:2019:2007 Verein KlimaSeniorinnen Schweiz and Others v SwitzerlandApp No 53600/20 (ECtHR, 9 April 2024) United Nations Framework Convention on Climate Change (adopted 9 May 1992, entered into force 21 March 1994) 1771",
+            "tokenEstimate": 383
+          },
+          {
+            "index": 15,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "768 million against an estimated annual need of over USD 400 billion less than 0.2% of the finance required. The choice of the World Bank as trustee drew sustained criticism from the G77 and China Group, who argued that the Bank’s history of charging interest on loans to developing countries made it an inappropriate custodian. More fundamentally, the fund’s non-liability character means that contributions are gifts, not obligations. From an environmental justice perspective, this structure is deeply problematic. As Naylor and Ford observe, developing countries experience fifteen times more victims of natural disasters than developed nations, yet bear minimal historical responsibility for the GHG concentrations that intensify those disasters. The Loss and Damage Fund, as currently designed, asks the victims of this injustice to depend on the generosity of its perpetrators, a structure that is politically unstable, ethically inadequate, and legally incoherent. 3. The ICJ Advisory Opinion (2025): Normative Advance, Operational Caution The most significant legal development of the contemporary period is the ICJ Advisory Opinion on Obligations of States in Respect of Climate Change, delivered on 23 July 2025. Requested by the UN General Assembly in Resolution 77/276 (2023) following a Vanuatu-led initiative, the proceedings attracted participation from 96 states and 11 international organisations, the highest in ICJ history. The Opinion’s holdings are normatively significant. The Court unanimously affirmed that the Paris Agreement, UNFCCC, and Kyoto Protocol create legally binding obligations; that the 1.5°C temperature goal constitutes the governing legal standard for assessing NDC adequacy; that states have limited discretion in designing NDCs, which must become progressiv",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 16,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "ely more ambitious; and that the general obligations of due diligence to prevent significant transboundary environmental harm apply to all states in respect of GHG emissions. On state responsibility, the Court held that the general rules of state responsibility remain applicable alongside the climate treaty regime. The ICJ’s Opinion was preceded by the ITLOS Advisory Opinion of May 2024, which found that anthropogenic GHG emissions into the ocean constitute pollution of the marine environment under UNCLOS, triggering due diligence obligations for all state parties. The advisory opinion is not legally binding. Its authority is persuasive rather than obligatory. It is expected, however, to exert significant influence on domestic climate litigation which has already been transformed by decisions including Urgenda Foundation v Netherlands and Klimaseniorinnen v Switzerland as well as future UNFCCC negotiations on climate change. Whether states will accept its framing of climate change as triggering obligations under customary international law, treaty law, and human rights law as a basis for binding legal obligation remains to be seen. B. Cross-Border Pollution: The Limits of Sectoralisation Beyond climate, cross-border pollution exposes the chronic weakness of a sectoralised IEL framework. The principal instruments include the UNECE Convention on Long-Range Transboundary Air Pollution (CLRTAP, 1979) and its",
+            "tokenEstimate": 357
+          },
+          {
+            "index": 17,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "UPUJSD6 of 14 UPU Journal of Sustainable DevelopmentDOI: https://doi.org/10.69612/upujsd-2026-21-023 Case concerning Pulp Mills on the River Uruguay (Argentina v Uruguay) [2010] ICJ Rep 14, para 204. The EIA obligation is now generally accepted as customary: Sands et al (n 2) 601 Convention on Long-Range Transboundary Air Pollution (adopted 13 November 1979, entered into force 16 March 1983)",
+            "tokenEstimate": 99
+          },
+          {
+            "index": 18,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "Food and Agriculture Organization (FAO),Uganda Fisheries and Aquaculture Sector Overview(2019); Ministry of Water and Environment (Uganda),State of the Environment Report for Uganda 2020 Treaty for the Establishment of the East African Community (adopted 30 November 1999, entered into force 7 July 2000); Protocol for Sustainable Development of Lake Victoria Basin (2003) Patricia Kameri-Mbote, ‘Water, Conflict, and Cooperation: Lessons from the Nile River Basin’ (2007) 4Law, Environment and Development Journal1 Pulp Mills on the River Uruguay (Argentina v Uruguay)(Judgment) [2010] ICJ Rep 14 Ibid ibid para 204 John Ruggie, ‘Business and Human Rights: The Evolving International Agenda’ (2007) 101(4) AJIL 819, 821 UN Guiding Principles on Business and Human Rights (2011) UN Doc A/HRC/17/31 eight protocols; the Basel Convention on Hazardous Wastes (1989) UNCLOS Part XII and the UN Watercourses Convention (1997). The ICJ’s elaboration of the customary duty to conduct environmental impact assessments for activities with a risk of significant transboundary harm, affirmed in Pulp Mills on the River Uruguay (2010), supplements the treaty framework. Each of these instruments addresses a specific medium or waste stream within a defined geographic scope. CLRTAP’s limitation to the UNECE region means that transboundary air pollution in Sub-Saharan Africa or South Asia where economic growth is rapidly increasing industrial emissions falls outside any comparable binding regime. The resulting framework is fragmented rather than systemic. The East African context illustrates the specific governance challenge for the Global South. Lake Victoria shared by Uganda, Kenya, and Tanzania is subject to transboundary pollution from industrial effluent, agricultural runoff, and municipal waste fr",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 19,
+            "heading": "HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
+            "text": "om all three riparian states. The Lake Victoria Basin Commission, established under the EAC framework, has limited enforcement capacity and operates primarily through coordination rather than binding obligation. As Kameri-Mbote has noted, the gap between normative commitment and practical governance in shared East African water bodies reflects the general condition of environmental governance in the region. The Pulp Mills case, while affirmatively establishing the customary EIA obligation, simultaneously illustrated the limits of ICJ adjudication in pollution disputes. Argentina failed to convince the Court that Uruguay had breached its substantive obligations, despite evidence of pollution from the Botnia pulp mill. The evidentiary burden demonstrating significant harm attributable to specific activities proved insurmountable in practice. This is a recurrent pattern: the substantive obligations of IEL are broad; the evidentiary requirements for establishing breach are demanding; and institutional capacity for independent environmental assessment in disputed contexts remains inadequate. C. Multinational Corporations: The Governance Gap and Its Partial Closure 1. The Architecture of Evasion The governance gap in MNC environmental accountability is perhaps the most politically entrenched failure of IEL. Under traditional international law, corporations are not direct subjects bearing primary legal obligations; liability is determined by domestic law. This creates a structural opportunity for regulatory arbitrage: MNCs incorporate in jurisdictions with favourable liability regimes, operate through chains of subsidiaries in host states with weak environmental standards, and insulate parent companies from liability for the acts of locally incorporated entities. In Ruggie’s f",
+            "tokenEstimate": 450
+          }
+        ]
+      }
+    }
+  }
+}

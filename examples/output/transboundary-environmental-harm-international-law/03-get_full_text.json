@@ -6,23 +6,40 @@
     "status": "partial",
     "degraded": true,
     "warnings": [
+      "OpenAlex open-access PDF location could not be parsed; trying Unpaywall and CORE.",
       "Unpaywall returned no PDF for this DOI.",
-      "core full-text-lookup failed: Upstream core server error (500)",
+      "CORE fallback returned no usable PDF.",
       "No full-text PDF source could be resolved."
     ],
     "provenance": [
       {
         "source": "openalex",
         "endpoint": "cache:paper",
-        "timestamp": "2026-10-14T10:04:09.089Z",
+        "timestamp": "2026-10-14T10:21:06.019Z",
         "cached": true,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "openalex",
+        "endpoint": "fulltext:oa-location",
+        "timestamp": "2026-10-14T10:21:08.294Z",
+        "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
       },
       {
         "source": "unpaywall",
         "endpoint": "fulltext:unpaywall",
-        "timestamp": "2026-10-14T10:04:11.706Z",
+        "timestamp": "2026-10-14T10:21:09.187Z",
+        "cached": false,
+        "license": "see-source-terms",
+        "latency_ms": 0
+      },
+      {
+        "source": "core",
+        "endpoint": "fulltext:core",
+        "timestamp": "2026-10-14T10:21:10.904Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -30,7 +47,7 @@
       {
         "source": "openalex",
         "endpoint": "fulltext:resolve",
-        "timestamp": "2026-10-14T10:04:16.488Z",
+        "timestamp": "2026-10-14T10:21:10.905Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
