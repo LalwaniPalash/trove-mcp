@@ -257,6 +257,14 @@ TROVE_DISABLED_TOOLS=get_trending_papers,find_similar_papers npx -y trove-mcp@la
 - No Sci-Hub or paywalled bypassing
 - All sources are public/open APIs or legal OA links
 
+## Contributing and support
+
+Bug reports, questions and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Citation
+
+If you use Trove in research, please cite it using [CITATION.cff](CITATION.cff).
+
 ## License
 
 MIT

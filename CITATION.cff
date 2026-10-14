@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use Trove in your research, please cite it as below."
+title: "Trove: a fail-closed scholarly retrieval server for language-model research agents"
+type: software
+authors:
+  - family-names: Lalwani
+    given-names: Palash
+    orcid: "https://orcid.org/0009-0009-8270-6704"
+repository-code: "https://github.com/LalwaniPalash/trove-mcp"
+url: "https://www.npmjs.com/package/trove-mcp"
+license: MIT
+version: 0.1.10
+date-released: "2026-10-14"
+keywords:
+  - Model Context Protocol
+  - scholarly metadata
+  - literature review
+  - research software
