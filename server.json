@@ -1,13 +1,26 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
-  "name": "io.github.palashlalwani/trove-mcp",
-  "description": "Unified MCP server for open academic research search, retrieval, and evidence synthesis.",
-  "version": "0.1.9",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.LalwaniPalash/trove-mcp",
+  "title": "Trove",
+  "description": "Fail-closed academic research server: search, full text, citations across open scholarly APIs.",
+  "repository": {
+    "url": "https://github.com/LalwaniPalash/trove-mcp",
+    "source": "github"
+  },
+  "version": "0.1.10",
   "packages": [
     {
-      "registry_type": "npm",
+      "registryType": "npm",
       "identifier": "trove-mcp",
-      "version": "0.1.9"
+      "version": "0.1.10",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "TROVE_CONTACT_EMAIL", "description": "Contact email for polite OpenAlex usage", "isRequired": false, "isSecret": false },
+        { "name": "UNPAYWALL_EMAIL", "description": "Email required to enable Unpaywall open-access lookup", "isRequired": false, "isSecret": false },
+        { "name": "TROVE_DB_PATH", "description": "Path to the local SQLite cache and citation-snapshot database", "isRequired": false, "isSecret": false },
+        { "name": "SEMANTIC_SCHOLAR_API_KEY", "description": "Needed for reliable find_similar_papers", "isRequired": false, "isSecret": true },
+        { "name": "CORE_API_KEY", "description": "Improves CORE full-text throughput", "isRequired": false, "isSecret": true }
+      ]
     }
   ]
 }
