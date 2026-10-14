@@ -174,7 +174,7 @@ Law, which is now nearly complete. In that work I used Trove to find the
 literature I needed to review and to identify gaps in it before finalising
 the scope and moving to a more detailed literature review. Trove is published
 on npm as `trove-mcp` and is listed in the official Model Context Protocol
-registry. TODO: confirm the listing after publishing.
+registry as `io.github.LalwaniPalash/trove-mcp`.
 
 # AI usage disclosure
 
