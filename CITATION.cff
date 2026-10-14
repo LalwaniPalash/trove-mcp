@@ -9,7 +9,7 @@ authors:
 repository-code: "https://github.com/LalwaniPalash/trove-mcp"
 url: "https://www.npmjs.com/package/trove-mcp"
 license: MIT
-version: 0.1.10
+version: 0.1.11
 date-released: "2026-10-14"
 keywords:
   - Model Context Protocol

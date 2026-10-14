@@ -7,12 +7,12 @@
     "url": "https://github.com/LalwaniPalash/trove-mcp",
     "source": "github"
   },
-  "version": "0.1.10",
+  "version": "0.1.11",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "trove-mcp",
-      "version": "0.1.10",
+      "version": "0.1.11",
       "transport": { "type": "stdio" },
       "environmentVariables": [
         { "name": "TROVE_CONTACT_EMAIL", "description": "Contact email for polite OpenAlex usage", "isRequired": false, "isSecret": false },

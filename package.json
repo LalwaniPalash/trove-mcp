@@ -1,6 +1,6 @@
 {
   "name": "trove-mcp",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "mcpName": "io.github.LalwaniPalash/trove-mcp",
   "description": "Unified MCP server for open academic research search, retrieval, and synthesis.",
   "homepage": "https://github.com/LalwaniPalash/trove-mcp#readme",
