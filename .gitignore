@@ -8,3 +8,4 @@ coverage
 .trove.db-*
 .npm-cache
 *.tgz
+.promo-video/
