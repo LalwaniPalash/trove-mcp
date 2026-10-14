@@ -3,19 +3,14 @@
     "identifier": "doi:10.26650/annales.2023.73.0001"
   },
   "response": {
-    "status": "partial",
-    "degraded": true,
-    "warnings": [
-      "OpenAlex open-access PDF location could not be parsed; trying Unpaywall and CORE.",
-      "Unpaywall returned no PDF for this DOI.",
-      "CORE fallback returned no usable PDF.",
-      "No full-text PDF source could be resolved."
-    ],
+    "status": "ok",
+    "degraded": false,
+    "warnings": [],
     "provenance": [
       {
         "source": "openalex",
         "endpoint": "cache:paper",
-        "timestamp": "2026-10-14T10:21:06.019Z",
+        "timestamp": "2026-10-14T13:54:26.510Z",
         "cached": true,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -23,23 +18,7 @@
       {
         "source": "openalex",
         "endpoint": "fulltext:oa-location",
-        "timestamp": "2026-10-14T10:21:08.294Z",
-        "cached": false,
-        "license": "see-source-terms",
-        "latency_ms": 0
-      },
-      {
-        "source": "unpaywall",
-        "endpoint": "fulltext:unpaywall",
-        "timestamp": "2026-10-14T10:21:09.187Z",
-        "cached": false,
-        "license": "see-source-terms",
-        "latency_ms": 0
-      },
-      {
-        "source": "core",
-        "endpoint": "fulltext:core",
-        "timestamp": "2026-10-14T10:21:10.904Z",
+        "timestamp": "2026-10-14T13:55:00.450Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -47,7 +26,7 @@
       {
         "source": "openalex",
         "endpoint": "fulltext:resolve",
-        "timestamp": "2026-10-14T10:21:10.905Z",
+        "timestamp": "2026-10-14T13:55:00.452Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -59,19 +38,116 @@
     "data": {
       "fullText": {
         "paperId": "doi:10.26650/annales.2023.73.0001",
-        "source": "none",
-        "availability": "abstract_only",
+        "source": "openalex",
+        "sourceUrl": "https://dergipark.org.tr/tr/download/article-file/3558010",
+        "availability": "full_text",
         "truncation": {
-          "truncated": false,
-          "maxChunks": 1,
-          "returnedChunks": 1
+          "truncated": true,
+          "maxChunks": 20,
+          "returnedChunks": 20
         },
         "chunks": [
           {
             "index": 0,
-            "heading": "Abstract",
-            "text": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles",
-            "tokenEstimate": 77
+            "text": "Annales de la Faculté de Droit d’Istanbul, 73: 1–95 http://annales.istanbul.edu.tr/ Submitted: 10.10.2022 Accepted: 24.03.2023 Published Online: 05.06.2023\n\nAnnales de la Faculté de Droit d’Istanbul * Part I of the present paper has been published in Annales of Istanbul University, ‘Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts and Principles- Part 1: “Common Heritage of Mankind”,”Present and Future Generations”, “Inter/Intra-generational Equity” and “Sustainable Development” (2022) 71 Annales de la Faculté de Droit d’Istanbul 119.",
+            "tokenEstimate": 150
+          },
+          {
+            "index": 1,
+            "text": "To cite this article: Gemalmaz MS, “Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles”, (2023) 73 Annales de la Faculté de Droit d’Istanbul 1. https://doi.org/10.26650/annales.2023.73.0001 3. No (transboundary) Environmental Harm Principle i. Recognition and scope of the principle in soft law instruments Following the adoption of the UN General Assembly resolution 626 (VII) of 21/12/1952 on the “Right to exploit freely natural wealth and resources” in which this right of peoples has been recognized as “inherent in their sovereignty” and as complying with the purposes and principles of the UN Charter , a significant step was taken by the adoption of the UN General Assembly resolution 1803 (XVII) of 14/12/1962 on “Permanent sovereignty over natural resources”. The 1962 resolution was adopted as an economic aspect of self-determination, which declared that “the right of peoples and nations to permanent sovereignty over their natural wealth and resources must be exercised in the interest of their national development and of the well-being of the people of the State concerned”, (para.1). Although the UNGA 1 The UN General Assembly Resolution 626 (VII) on “Right to exploit freely natural wealth and resources” was adopted on 21 December 1952, (411 plenary meeting), UN Doc A/Res/626 (1952). In operative paragraph 2 of this resolution the GA recommends to all Member States to refrain from acts, direct or indirect, designed to impede the exercise of the sovereignty of any State over its natural resources. 2 James N. Hyde, ‘Per",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 2,
+            "text": "manent Sovereignty over Natural Wealth and Resources’ (1956) 50 (4) AJIL 854. 3 The UN General Assembly Resolution 1803 (XVII) on “Permanent sovereignty over natural resources” was adopted on 14 December 1962; 17 UN GAOR (1194 plenary meeting), UN Doc A/Res/1803 (1962). Paragraph 7 of the Resolution 1803 provided that “Violation of the rights of peoples and nations to sovereignty over their natural wealth and resources is contrary to the spirit and principles of the Charter of the United Nations and hinders the development of international co-operation and the maintenance of peace”. 4 For an analytical review of the Resolution 1803 (XVII) of 14/12/1962, see, Karol N. Gess, ‘Permanent Sovereignty over Natural Resources’ (1964) 13 (2) ICLQ 398 (The author stated that “the General Assembly intended to set forth, within the vehicle of a Mehmet Semih Gemalmaz Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles* This work is licensed under Creative Commons Attribution-NonCommercial 4.0 International License",
+            "tokenEstimate": 318
+          },
+          {
+            "index": 3,
+            "text": "Annales de la Faculté de Droit dIstanbul Resolution 1803 did not provide for conservation of natural wealth and resources, the standard proclaimed by this resolution was subsequently used for the protection of the environment at the 1972 Stockholm and the 1992 Rio Conferences. Principle 21 of the 1972 Stockholm Declaration provides: “States have, in accordance with the Charter of the United Nations and the principles of international law, the sovereign right to exploit their own resources pursuant to their own environmental policies, and the responsibility to ensure that activities within their jurisdiction or control do not cause damage to the environment of other States or of areas beyond the limits of national jurisdiction”. Principle 22 of the 1972 Stockholm Declaration requires States to further develop the international law regarding liability and compensation for victims of pollution and other environmental damage caused by activities within their jurisdiction or control to areas beyond their jurisdiction. The UN General Assembly Resolution 2995 (XXVII) on “Cooperation between States in the field of environment” , adopted on 15/12/1972, emphasizes that “in the exploration, exploitation and development of their natural resources, States must not produce significant harmful effects in zones situated outside their national jurisdiction”, (para.1). This Resolution recognizes that Principle 21 of the Stockholm Declaration “will be effectively achieved if official and public knowledge is provided of the technical data relating to the work to be carried out” by the acting State “with a view to avoiding significant harm that may occur in the human environment of an adjacent area”. It further recognizes that technical data “will be given and received declaration, the bas",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 4,
+            "text": "ic principles and modalities of the exercise of permanent sovereignty over natural resources, subject to the overriding requirement that both principles and modalities of exercise be in conformity with the rights and duties of States under existing international law, and, further, that the principles set forth reflect minimum standards”, ibid 411). 5 See, Ayesha Diaz, ‘Permanent Sovereignty over Natural Resources’ (1994) 24 (4) EPL 157; Patricia Birnie, ‘Environmental Protection and Development’ (1995) 20 (1) Melb. Univ. Law Rev. 69. 6 The “Declaration of the United Nations Conference on the Human Environment” (“Stockholm Declaration”) was adopted on 16/06/1972 by the United Nations Conference on the Human Environment held at Stockholm from 5 to 16 June 1972, in, Report of the United Nations Conference on the Human Environment, UN Doc. A/CONF. 48/14/Rev. 1, sec. 1, (1972); reprinted in, 11 ILM 1416 (1972). Principle 21 of the Stockholm Declaration was originally accompanied by a proposed Principle 20 that would affirm a duty to inform transboundary risks. The proposed Principle 20 was as follows: “Relevant information must be supplied by States on activities or developments within their jurisdiction or under their control whenever they believe, or have reason to believe, that such information is needed to avoid the risk of significant adverse effects on the environment in areas beyond their national jurisdiction”. However, in view of the controversy over the proposal the Stockholm Conference decided to omit the controverted Principle 20 of the Declaration. Consequently, the duty to inform did not get sufficient support at the Conference to be recognized as a principle of international law; See, Daniel Partan, ‘The “Duty to Inform” in, International Environmental Law’ (1",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 5,
+            "text": "988) 6 (1) B. U. Int’l L. J. 43, 44-46; Louis B. Sohn, ‘The Stockholm Declaration on the Human Environment’ (1973) 14 (3) Harv. Int’l L. J. 493, 496-502; M. Semih Gemalmaz, ‘Introduction to International Environmental Law: From Initial Steps to Institution Building for the Conservation of Environment-Part 1’ (2021) 33 (2) ERPL/REDP 255, 361; M. Semih Gemalmaz, ‘Introduction to International Environmental Law: From Initial Steps to Institution Building for the Conservation of Environment-Part II’ (2021) 33 (3) ERPL773, 786-787. Gemalmaz (n *) 129-132, 144-145, 149. 7 Sohn (n 6) 493-502. 8 The UN General Assembly Resolution 2995 (XXVII) on “Cooperation between States in the field of environment” was adopted on 15/12/1972 at 2112 plenary meeting. The vote was 115 to none, with 10 abstentions. This Resolution was based on a proposal made by Brazil.",
+            "tokenEstimate": 214
+          },
+          {
+            "index": 6,
+            "text": "Gemalmaz / Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts.. in the best spirit of cooperation and good neighborliness”. In the UNGA Resolution 2996 (XXVII) of 15/12/1972, entitled “International responsibility of States in regard to the environment”, the General Assembly, after recalling Principles 21 and 22 of the Declaration of the United Nations Conference on the Human Environment concerning the international responsibility of States in regard to the environment, stated that those principles lay down the basic rules governing this matter. Additionally, it declared that no resolution adopted at the 27 session of the General Assembly could affect Principles 21 and 22 of the Declaration. With regard to duty to inform aspect of the issue the 1972 General Assembly resolution was criticized as it failed to affirm the duty to inform in a clear and straightforward manner.",
+            "tokenEstimate": 235
+          },
+          {
+            "index": 7,
+            "text": "Undoubtedly Principle 21 is one of the most important principles laid down by the Stockholm Declaration since it balances two basic elements, namely, the right of a State to develop its economy and the duty not to cause transfrontier environmental harm. “Principle 21, in a characteristic UN formulation asserted the competing principles of international responsibility and national authority within a general framework of international rights and obligations”. Thus, Principle 21 of the Stockholm Declaration confirms the basic structure of the environmental conflict. “This two-way definition” is repeated in more or less the same form in many international environmental instruments. “It is a ‘process-definition’: it indicates the relevant values but leaves the determination of their normative impact into further process”. According to Sohn “Principle 21 makes clear that the rule of responsibility applies not only to damage caused to environment of other states but also to any injury inflicted on the environment of ‘areas beyond the limits of national jurisdiction’, such as the high seas or Antarctica. Within the ambit of the principle are not only damage- causing activities within the area under a state’s jurisdiction, including its territorial waters, but also activities conducted by persons or ships under its ‘control’, wherever they may act”. 9 The UNGA Resolution 2996 (XXVII) on “International responsibility of States in regard to the environment” was adopted on 15/12/1972 at 2112 plenary meeting. The vote was 111 to none, with 11 abstentions. Also see Partan (n 6) 47; Sohn (n 10 Partan (n 6) 48 (After having examined various documents and developments, the author in his analysis concluded that “the ‘duty to inform’ has become a cornerstone of the effort to bring transbo",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 8,
+            "text": "undary environmental risks under governmental control. Without full information concerning the nature and extent of the risks to which their territories and peoples are subject, governments cannot respond effectively to the increased magnitude and new forms of transboundary risks created by the use of new technologies. The source state ought therefore to be legally obligated to provide affected states with all relevant and available information needed to cope with such risks”, ibid 87-88). 11 Pierre-Marie Dupuy, ‘Overview of the Existing Customary Legal Regime regarding International Pollution’, in Daniel Barstow Magraw (ed) International Law and Pollution (Penn Press 1988) 61, 64; Sohn (n 6) 485-493 (In view of the author Principle 21 “attempts to balance the right of a state to control matters within its territory with its responsibility to ensure that what is done within that territory does not cause damage outside”, ibid 485-486); Further see, Gemalmaz, ‘Introduction to International Environmental Law: Part 1I’ (n 6) 786-787; Gemalmaz (n *) 129-132. 12 Oscar Schachter, ‘The Emergence of International Environmental Law’ (1990) 44 (2) J. Int’l Aff. 457, 459. 13 Martti Koskenniemi, ‘Peaceful Settlement of Environmental Disputes’ (1991) 60 (1) Nordic J. Int’l L. 73, 76. 14 Sohn (n 6) 493.",
+            "tokenEstimate": 328
+          },
+          {
+            "index": 9,
+            "text": "Annales de la Faculté de Droit dIstanbul Handl is of the opinion that Principle 21 “can only be understood as referring to material damage alone, and that it thus confirms that material damage is the precondition for a state’s responsibility arising out of an activity lawful per se”. Furthermore, reading Principle 21 from the perspective of unilateral state action Bilder argued that this principle “implies that a state threatened by another state’s breach of this duty has the right to take reasonable action to protect itself from environmental damage. To the extent that international law presently recognizes such a principle, the arguments for the legitimacy of unilateral action may be strengthened”. Both Principles 21 and 22 of the Stockholm Declaration were designed to deal with responsibility and liability for environmental harm based on existing international law at the time in question. However, “in their generality, they did not address what was meant by a state being responsible, or what principles of liability should be applied, only that they should be developed further. Nor did the (Stockholm) Declaration shed any light on how questions of liability and responsibility should be settled. Nevertheless, both Principles were based on previous statements of law.” In addition to the aforementioned documents, Principle 21 of the Stockholm Declaration has subsequently been reaffirmed by several decisions of international bodies, such as the European Economic Community (European Union, EU) the Organization for Economic Cooperation and Development (OECD), as well as in various instruments. For example, in the UN General Assembly Resolution 15 Günther Handl, ‘Territorial Sovereignty and the Problem of Transnational Pollution’ (1975) 69 (1) AJIL 50, 67 (The author stated",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 10,
+            "text": " that in the deliberations of the Preparatory Committee on the Stockholm Declaration there was no reference at all to the question of the moral injury the victim state of transnational pollution might suffer in the form of a violation of its sovereignty, ibid 67); Also see, Henn-Jüri Uibopuu, ‘The Internationally Guaranteed Right of an Individual to a Clean Environment’ (1977) 1 Comp. L. Y.B. 101, 105 (According to the author, Principle 21, “referring to material damage done to another State, does not refer to the territory of the polluting State and thus also not to its own inhabitants”. Although both Handl and Uibopuu emphasized the element of “material damage” indicated in that Principle, this does not make both arguments the same. It is because, while Handl’s limited observation with respect to responsibility emanates from the damage given to another State, Uibopuu went further and added that provision does not cover the damage occurred in the polluting State. It is clear that the very purpose of Principle 21 was to formulate the former, i.e. refraining from given transboundary harm. But it may be possible to argue that the same Principle also implies a duty and consequently responsibility imposed on a State not to harm its own inhabitants). 16 Richard B. Bilder, ‘The Role of Unilateral Action in Preventing Environmental Injury’ (1981) 14 (1) Vand. J. Transnat’l L. 51, 64 (With regard to burden of proof, the author commented that this issue may be particularly relevant where the law is unclear, as may often be the case in the developing field of international environmental law. The more permissive view, which appears more widely supported, would in theory tend to buttress and encourage unilateral environmental action in such cases; the argument being that a state ma",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 11,
+            "text": "y do anything that international law does not specifically forbid, ibid 66); Compare this argument, (Colombia v. Peru) [1950] ICJ Rep 276-277; But also see, Individual Opinion of Judge Alvarez appended to “Fisheries (United Kingdom v. Norway)” [1951] ICJ Rep 145, 152 (Judge Alvarez stated that “any State alleging a principle of international law must prove its existence; and one claiming that a principle of international law has been abrogated or has become ineffective and requires to be renewed, must likewise provide proof of this claim”). 17 Robert E. Stein, ‘The Settlement of Environmental Disputes: Towards a System of Flexible Dispute Settlement’ (1985) 12 (2) Syracuse J. Int’l L. & Com. 283, 284 (The author drew attention to the fact that Principle 21 was based on the 1963 Limited Test Ban Treaty which contained similar language, ibid). 18 For example, see, Principles 3 and 6 of the European Economic Community “Programme of Action on the Environment” (16 O.J. EC (No. C 12/6), 1973; 20 O.J. EU (No. C 139), 1977; 26 O.J. EU (No. C 46), 1983). 19 For example, the 1974 OECD Council Recommendation C (74) 224 concerning “Principles of Transfrontier Pollution” (Annex, title B), reproduced in, 14 ILM 242 (1975) (This Recommendation stated, inter alia, that “Prior to the initiation in a country of works or undertakings which might create a significant risk of transfrontier pollution, this country should provide early information to other countries which are or may be affected”). Also see, the 1974 OECD Council Recommendation C (74) 220 on the “Control of Eutrophication of Waters”, and Recommendation C (74) 221 on “Strategies for Specific",
+            "tokenEstimate": 416
+          },
+          {
+            "index": 12,
+            "text": "Gemalmaz / Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts.. 3129 (XXVIII) of December 1973 on “Co-operation in the Field of Environment concerning Natural Resources Shared by Two or More States” , it was indicated that sharing of such resources “must be developed on the basis of a system of information and prior consultation within the framework of the normal relations” existing between such States. For example, Section 5 of the OECD “Final Act of the Conference on Security and Cooperation in Europe” (Helsinki Final Act) of 01/08/1975 read as follows: “Each of the participating States, in accordance with the principles of international law, ought to ensure, in a spirit of co-operation, that activities carried out on its territory do not cause degradation of the environment in another State or in areas lying beyond the limits of national jurisdiction”. Article 30 of the UN “Charter of Economic Rights and Duties of States” of 12/12/1974 clearly provides that all States have the responsibility to ensure that activities within their jurisdiction or control do not cause damage to the environment of other States or of areas beyond the limits of national jurisdiction. The United Nations “World Charter for Nature” of 28/10/1982, under Section “III- Implementation”, requires States, public authorities, international organizations, individuals, groups and corporations to “ensure that activities within their jurisdictions or control do not cause damage to the natural systems located within other states or in the areas beyond the limits of national jurisdiction”, (para.21/d), and to “safeguard and conserve nature in areas beyond national jurisdiction”, (para.21/e). The World Charter for Nature could not have legally bindi",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 13,
+            "text": "ng force. Furthermore, it “does not purport to have Pollutants Control”. The 1977 OECD Council Recommendation C (77) 28 (Final) on the “Regime of equal access and non-discrimination in relation to transfrontier pollution” of 17/05/1977, reproduced in, 16 ILM 977 (1977) (In the 1977 Recommendation it is stated, inter alia, that “the Country of origin, on its own initiative or at the request of an exposed Country, should communicate to the latter appropriate information concerning it in matters of transfrontier pollution or significant risk of such pollution and enter into consultations with it”); See, Dupuy (n 11) 64-65; Partan (n 6) 51-52, 84. 20 The UN General Assembly resolution 3129 (XXVIII) on “Co-operation in the Field of Environment concerning Natural Resources Shared by Two or More States” was adopted on 13/12/1973, (UN GAOR Supp. (No.30A), UN Doc. A/9030/ Add.1, 1973) (This Resolution adopted by a vote 77 to 5, with 43 abstentions). Also see, Partan (n 6) 49 (According to the author “the lack of consensus on the 1973 resolution should not be understood as expressing disapproval of the duty to inform. Since the negative votes and the abstentions in 1973 were explained on other grounds, the vote on the 1973 resolution could be construed as in effect an endorsement of the duty to inform affected states of transboundary risks”, ibid). 21 Also see, Article 29 of the 1974 “Charter of Economic Rights and Duties of States”. Cf. the “Declaration of Principles Governing the Sea-Bed and the Ocean Floor, and the Subsoil Thereof, Beyond the Limits of National Jurisdiction” of 17/12/1970, (para.1). The 1970 ‘Declaration of Principles on the Sea-Bed” led to the adoption of the 1982 UN Convention on the Law of Sea. 22 The ‘World Charter for Nature’ was adopted by the UN General",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 14,
+            "text": " Assembly resolution 37/7 on 28/10/1982 at its 48 plenary meeting; UN GAOR, 37 Sess., Supp. No.51, p.17, UN Doc.A/37/51 (1982). The vote was 111 to 1, with 18 abstentions. The only negative vote was the United States’. 23 Harold W. Wood, Jr., ‘The United Nations World Charter for Nature: The Developing Nations’ Initiative to Establish Protections for the Environment’ (1985) 12 (4) Ecology L.Q. 977 (According to the author the Charter could not have any legally binding force, ibid 982. Numerous countries commented on the Draft Charter, one of which was Turkey: “Although the draft contains some general principles for nature conservation which have been taken from various international agreements such as the Stockholm Declaration and the World Conservation Strategy, nevertheless, the reaffirmation of these principles at the global level in a World Charter for Nature is of great importance for it will help to promote man’s awareness of the need for preserving the natural balance and rational management of the environment as a whole”) ibid 987. Further see, Partan, (n 6) 62; (Although the Charter uses the mandatory word ‘shall’, the principles fail to present a legally enforceable standard, ibid 983. One commentator noted that “the Charter does not specify which of its provisions embody or reflect legal obligation. It would therefore be difficult to conclude that the Assembly regarded the World",
+            "tokenEstimate": 353
+          },
+          {
+            "index": 15,
+            "text": "Annales de la Faculté de Droit dIstanbul any greater legal effect than the Stockholm Declaration”. As was already noted in the “Introduction” part of this study, the 1982 ‘World Charter for Nature’ seems to recognize a non-utilitarian approach (Preamble). The UN General Assembly in its resolution 44/207 of 22/11/1989 on “Protection of global climate for present and future generations of mankind” reaffirms that, in accordance with the Charter of the United Nations and the principles of international law, States have the sovereign right to exploit their own resources in accordance with their environmental policies. It also reaffirms their responsibility to ensure that activities within their jurisdiction or control do not cause damage to the environment of other States or of areas beyond the limits of national jurisdiction and to play their due role in preserving and protecting the global and regional environment in accordance with their capacities and specific responsibilities (para.4). In the same line, the UN General Assembly resolution 44/224 of 22/12/1989 on “International cooperation in the monitoring, assessment and anticipation of environmental threats” confirms the same principles (para.4). The UN International Law Commission (ILC) also dealt with environmental questions in the course of its codification work on a draft code of crimes against the peace and security of mankind, on the law of non-navigational uses of international watercourses, and on international liability for injuries and their consequences arising out of acts not prohibited by international law. As early as 1976, the ILC suggested that a State’s “serious breach of an international obligation of essential importance for safeguarding and preservation of the human environment” violates principles",
+            "tokenEstimate": 450
+          },
+          {
+            "index": 16,
+            "text": " that “have become particularly essential rules of general international law”. Charter’s notice provisions as obligatory”). 24 Marc Pallemaerts, ‘International Environmental Law From Stockholm to Rio: Back to the Future?’ in Philippe Sands ‘Introduction’ (ed) Greening International Law (The New Press 1994) 1, 3. 25 The UN General Assembly resolution 44/207 on “Protection of global climate for present and future generations of mankind” was adopted on 22/11/1989 at its 85 plenary meeting. 26 The UN General Assembly resolution 44/224 on “International cooperation in the monitoring, assessment and anticipation of environmental threats and in assistance in cases of environmental emergencies” was adopted on 22/12/1989 at its 85",
+            "tokenEstimate": 183
+          },
+          {
+            "index": 17,
+            "text": "plenary meeting. In this resolution the General Assembly reaffirms that, in accordance with the UN Charter and the principles of international law, “States have the sovereign right to exploit their own resources in accordance with their environmental policies”. The same resolution also reaffirms the responsibility of States “to ensure that activities within their jurisdiction or control do not cause damage to the environment of other States or of areas beyond the limits of national jurisdiction, as well as to play their due role in preserving and protecting the global and regional environment in accordance with their capacities and specific responsibilities”, para 4.",
+            "tokenEstimate": 169
+          },
+          {
+            "index": 18,
+            "heading": "27 Report of the ILC on the work of its 28",
+            "text": "session, Draft Articles on State Responsibility, Article 19, UN GAOR, Thirty- first session, Supp. No.10 (A/31/10) (1976); Report of the ILC on the work of its 32 session, UN GAOR, Thirty-fifth session, Supp. No.10 (A/35/10) (1980); Report of the ILC on the work of its 42 session, UN GAOR, Frothy-fifth session, Supp. No.10 (A/45/10) (1990); Report of the ILC on the work of its 48 session, UN GAOR, Fifty-first session, Supp. No.10 (A/51/10) (1996); Daniel Barstow Magraw, ‘Transboundary Harm: The International Law Commission’s Study of International Liability’ (1986) 80 (2) AJIL 305; Francesco Francioni, ‘Legal Aspects of Mineral Exploitation in Antarctica’ (1986) 19 (2) Cornell Int’l L.J. 163, 175; Stephen C. McCaffrey, ‘The Work of the International Law Commission Relating to Transfrontier Environmental Harm’ (1988) 20 (3) N.Y.U. J. Int’l L & Pol. 715; Alan E. Boyle ‘State Responsibility and International Liability for Injurious Consequences of Acts Not Prohibited by International Law: A Necessary Distinction?’ (1990) 39 (1) 1; Peter H. Sand, ‘International Law on the Agenda of the United Nations Conference on Environment and Development Towards Global Environmental Security’ (1991) 60 (1) Nordic J. Int’l L. 5, 9; Kenneth F. McCallion, ‘International Environmental Justice: Rights and Remedies’, (2003) 26 (3) Hastings Int’l & Comp. L. Rev. 427, 430-431.",
+            "tokenEstimate": 344
+          },
+          {
+            "index": 19,
+            "heading": "27 Report of the ILC on the work of its 28",
+            "text": "Gemalmaz / Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts.. Principle 2 of the 1992 ‘Rio Declaration’ imposes a general duty upon States with respect to prevention of transboundary damage. In the latter Principle it is stated that “States have, in accordance with the Charter of the United Nations and the principles of international law, the sovereign right to exploit their own resources pursuant to their own environmental and developmental policies, and the responsibility to ensure that activities within their jurisdiction or control do not cause damage to the environment of other States or of areas beyond the limits of national jurisdiction.” (Emphasis added). Consequently, this principle indicates the duty of States not to cause damage to areas beyond national jurisdiction. In view of Sanwal, “while the Stockholm Declaration was concerned with the conflict between the sustainable use of natural resources and transboundary pollution, twenty years later the understanding of both the content and the context of human interference with the ecosystem has changed. The policy focus is no longer the apprehension that environmental considerations will restrict the right of states to exploit their natural resources but the impact on sovereignty of restrictions over activities affecting the natural environment. With the widening scope of accepted restrictions, sovereignty is acquiring a new meaning. The restrictions affect a range of economic activities from those likely to cause irreversible environmental damage to those maintaining an open and fair trading system”.",
+            "tokenEstimate": 411
           }
         ]
       }

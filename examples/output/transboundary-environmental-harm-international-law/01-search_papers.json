@@ -9,13 +9,13 @@
     "status": "partial",
     "degraded": true,
     "warnings": [
-      "Semantic Scholar is accessible without a key, but unauthenticated requests use a shared pool and may be throttled (429)."
+      "semantic_scholar search failed: Upstream semantic_scholar error (429) {\"message\": \"Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form\", \"code\": \"429\"}"
     ],
     "provenance": [
       {
         "source": "openalex",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:06.012Z",
+        "timestamp": "2026-10-14T13:54:26.502Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -23,7 +23,7 @@
       {
         "source": "semantic_scholar",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:06.012Z",
+        "timestamp": "2026-10-14T13:54:26.502Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -31,7 +31,7 @@
       {
         "source": "arxiv",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:06.012Z",
+        "timestamp": "2026-10-14T13:54:26.502Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -39,7 +39,7 @@
       {
         "source": "pubmed",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:06.012Z",
+        "timestamp": "2026-10-14T13:54:26.502Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -47,7 +47,7 @@
       {
         "source": "core",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:06.012Z",
+        "timestamp": "2026-10-14T13:54:26.502Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -61,15 +61,16 @@
         {
           "paper": {
             "id": "doi:10.26650/annales.2023.73.0001",
-            "title": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” pri",
+            "openAlexId": "W4386724811",
+            "title": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles",
             "abstract": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles",
             "year": 2023,
-            "venue": "Annales de la Faculté de Droit d'Istanbul",
+            "venue": "Annales de la Faculté de Droit d’Istanbul",
             "doi": "10.26650/annales.2023.73.0001",
             "citationCount": 1,
-            "referenceCount": 0,
-            "url": "https://www.semanticscholar.org/paper/035e9af79105aecae5845c6330fa17b0c74d1b28",
-            "pdfUrl": "http://dx.doi.org/10.26650/annales.2023.73.0001",
+            "referenceCount": 102,
+            "url": "https://openalex.org/W4386724811",
+            "pdfUrl": "https://dergipark.org.tr/tr/pub/iuafdi/issue/81018/1395618",
             "openAccess": true,
             "authors": [
               {
@@ -103,10 +104,8 @@
               "Environmental planning"
             ],
             "sourcePriority": [
-              "openalex",
-              "semantic_scholar"
-            ],
-            "s2Id": "035e9af79105aecae5845c6330fa17b0c74d1b28"
+              "openalex"
+            ]
           },
           "score": 100.11,
           "reasons": [
@@ -122,14 +121,15 @@
         {
           "paper": {
             "id": "doi:10.69612/upujsd-2026-21-023",
+            "openAlexId": "W7203579758",
             "title": "EFFECTIVENESS OF INTERNATIONAL ENVIRONMENTAL LAW IN ADDRESSING TRANSBOUNDARY HARM AND PROMOTING ENVIRONMENTAL JUSTICE",
-            "abstract": "Environmental harm is constitutively indifferent to political boundaries. Yet the mechanisms through which international law purports to address transboundary environmental damage remain fragmented, asymmetrically enforced, and ill-suited to the structural complexity of contemporary challenges. Beginning from the foundational architecture of the Trail Smelter Arbitration (1941)[1] and the Rio Declaration on Environment and Development (1992)[2], the article evaluates whether the no-harm rule and the polluter pay principle the twin pillars of IEL accountability remain adequate to modern environmental governance. The article employs doctrinal research and analytic methods to examine the effectiveness of international environmental law (IEL) in addressing transboundary environmental harm and advancing environmental justice across three contemporary dimensions climate-induced loss and damage, cross-border pollution, and the environmental impacts of multinational corporations.\nThe article opines that despite considerable maturity in the normative architecture of IEL, particularly in light of the ICJ Advisory Opinion on Obligations of States in Respect of Climate Change,[3] the Loss and Damage Fund operationalised at COP28;[4] the emerging transnational influenced Uganda’s domestic environmental framework under the National Environment Act 2019 and the constitutional right to a clean and healthy environment under Article 39 of the Constitution of Uganda;[5] as well as judicial enforcements in Advocates Coalition for Development and Environment (ACODE) v Attorney General[6] and Green watch (U) Ltd v Uganda Electricity Transmission Company Ltd and Attorney General;[7] the contemporary environmental challenges arising from oil development in the Albertine Graben and the East African Crude Oil Pipeline;[8] and the transboundary implications of environmental degradation within the Nile basin;[9] a structural enforcement deficit, chronic attribution difficulties, and a politically entrenched resistance to compensatory liability collectively undermine the transformative potential of IEL. The article concludes that environmental justice demands not merely incremental normative elaboration but a fundamental reconfiguration of international accountability structures.",
+            "abstract": "Environmental harm is constitutively indifferent to political boundaries. Yet the mechanisms through which international law purports to address transboundary environmental damage remain fragmented, asymmetrically enforced, and ill-suited to the structural complexity of contemporary challenges. Beginning from the foundational architecture of the Trail Smelter Arbitration (1941)[1] and the Rio Declaration on Environment and Development (1992)[2], the article evaluates whether the no-harm rule and the polluter pay principle the twin pillars of IEL accountability remain adequate to modern environmental governance. The article employs doctrinal research and analytic methods to examine the effectiveness of international environmental law (IEL) in addressing transboundary environmental harm and advancing environmental justice across three contemporary dimensions climate-induced loss and damage, cross-border pollution, and the environmental impacts of multinational corporations. The article opines that despite considerable maturity in the normative architecture of IEL, particularly in light of the ICJ Advisory Opinion on Obligations of States in Respect of Climate Change,[3] the Loss and Damage Fund operationalised at COP28;[4] the emerging transnational influenced Uganda’s domestic environmental framework under the National Environment Act 2019 and the constitutional right to a clean and healthy environment under Article 39 of the Constitution of Uganda;[5] as well as judicial enforcements in Advocates Coalition for Development and Environment (ACODE) v Attorney General[6] and Green watch (U) Ltd v Uganda Electricity Transmission Company Ltd and Attorney General;[7] the contemporary environmental challenges arising from oil development in the Albertine Graben and the East African Crude Oil Pipeline;[8] and the transboundary implications of environmental degradation within the Nile basin;[9] a structural enforcement deficit, chronic attribution difficulties, and a politically entrenched resistance to compensatory liability collectively undermine the transformative potential of IEL. The article concludes that environmental justice demands not merely incremental normative elaboration but a fundamental reconfiguration of international accountability structures.",
             "year": 2026,
             "venue": "Uganda Pentecostal University Journal of Sustainable Development",
             "doi": "10.69612/upujsd-2026-21-023",
             "citationCount": 0,
-            "referenceCount": 13,
-            "url": "https://www.semanticscholar.org/paper/e8ff228fdbfa7f350b6adc196a5dde33cae92f42",
+            "referenceCount": 7,
+            "url": "https://openalex.org/W7203579758",
             "pdfUrl": "https://articles.upu.ac.ug/index.php/upu-journal-for-sustainable-deve/article/download/23/22",
             "openAccess": true,
             "authors": [
@@ -187,7 +187,14 @@
             "institutions": [
               "Victoria University",
               "University of Ibadan",
-              "Uganda Pentecostal University"
+              "Victoria University",
+              "Uganda Pentecostal University",
+              "Victoria University",
+              "Victoria University",
+              "Victoria University",
+              "Victoria University",
+              "Victoria University",
+              "Victoria University"
             ],
             "topics": [
               "Environmental law",
@@ -214,10 +221,8 @@
               "Enforcement"
             ],
             "sourcePriority": [
-              "openalex",
-              "semantic_scholar"
-            ],
-            "s2Id": "e8ff228fdbfa7f350b6adc196a5dde33cae92f42"
+              "openalex"
+            ]
           },
           "score": 100.1,
           "reasons": [
@@ -617,43 +622,56 @@
         },
         {
           "paper": {
-            "id": "doi:10.1111/reel.12362",
-            "title": "State responsibility in international law for transboundary water‐related harm: The emergence of a new ecosystems‐based paradigm?",
-            "abstract": "Though one might reasonably expect that transboundary harm caused to the riparian interests of watercourse States should quite easily give rise to findings of legal responsibility on the part of the State causing such harm, this has rarely been the case. One reason commonly advanced is that the primary rules of international water law, breach of which would give rise to State responsibility, are vague and uncertain as regards their precise normative implications. However, recent developments regarding the requirement to protect riverine ecosystems and to maintain related ecosystem services provide an important degree of clarity as regards the standard of conduct expected of watercourse States, and the types of harm which may be compensable. This is welcome considering the important role that State responsibility might be presumed to play in giving effect to the values and commitments enshrined in the rules and principles of international water law.",
-            "year": 2020,
-            "venue": "Review of European, Comparative &amp; International Environmental Law",
-            "doi": "10.1111/REEL.12362",
-            "s2Id": "7fbe0b791d3e7d18e899beb6079b6131b597d20c",
-            "url": "https://www.semanticscholar.org/paper/7fbe0b791d3e7d18e899beb6079b6131b597d20c",
-            "pdfUrl": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/reel.12362",
-            "citationCount": 4,
-            "referenceCount": 0,
+            "id": "doi:10.1007/978-3-031-13264-3",
+            "title": "Corporate Liability for Transboundary Environmental Harm ::An International and Transnational Perspective /",
+            "abstract": "This open access book aims to elaborate on the legal prerequisites to establish the liability of corporations for transboundary environmental harm, not only by identifying existing liability rules, principles and standards but also by analysing their potential for further legal development. The authors consider international and transboundary liability law to currently be an underutilised tool for international environmental protection. The book seeks to address this by exploring what is needed in terms of legislative action and identifying options for judicial pliability, thereby providing an important legal contribution in furthering the development of an effective international and transnational environmental liability law regime",
+            "year": 2022,
+            "venue": "",
+            "doi": "10.1007/978-3-031-13264-3",
+            "url": "https://core.ac.uk/download/552147568.pdf",
+            "pdfUrl": "https://core.ac.uk/download/552147568.pdf",
             "authors": [
               {
-                "id": "84738565",
-                "name": "O. McIntyre"
+                "name": {
+                  "name": "Proelss, Alexander."
+                }
+              },
+              {
+                "name": {
+                  "name": "Schmalenbach, Kirsten."
+                }
+              },
+              {
+                "name": {
+                  "name": "Krebs, David."
+                }
+              },
+              {
+                "name": {
+                  "name": "Gailhofer, Peter."
+                }
+              },
+              {
+                "name": {
+                  "name": "Verheyen, Roda."
+                }
               }
             ],
             "institutions": [],
-            "topics": [
-              "Political Science"
-            ],
-            "fields": [
-              "Political Science"
-            ],
-            "openAccess": true,
+            "topics": [],
+            "fields": [],
+            "openAccess": false,
             "sourcePriority": [
-              "semantic_scholar"
+              "core"
             ]
           },
-          "score": 79.19,
+          "score": 76.2,
           "reasons": [
-            "relevance:8",
-            "anchor_hits:2",
-            "anchor_title_hits:2",
-            "citations:4",
-            "year:2020",
-            "open_access",
+            "relevance:9",
+            "anchor_hits:3",
+            "anchor_title_hits:3",
+            "citations:0",
+            "year:2022",
             "full_text_url"
           ]
         }

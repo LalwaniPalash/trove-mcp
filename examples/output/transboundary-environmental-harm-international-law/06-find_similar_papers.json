@@ -7,13 +7,14 @@
     "status": "error",
     "degraded": true,
     "warnings": [
+      "Semantic similarity unavailable: Semantic Scholar returned no recommendations or is currently rate-limited.",
       "Semantic similarity requires SEMANTIC_SCHOLAR_API_KEY for reliable Semantic Scholar recommendations."
     ],
     "provenance": [
       {
         "source": "semantic_scholar",
         "endpoint": "recommendations",
-        "timestamp": "2026-10-14T10:23:20.572Z",
+        "timestamp": "2026-10-14T13:56:48.474Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0

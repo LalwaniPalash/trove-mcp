@@ -80,7 +80,7 @@ If you do not want Claude to touch the setup-sensitive tools, hide them with `TR
 ## What to expect on a fresh install
 
 - `get_trending_papers` will usually return `mode = unavailable` on first run. Trove has to accumulate at least two local citation snapshot dates before it can compute citation velocity honestly.
-- `find_similar_papers` is usable without a Semantic Scholar key only in theory. In practice, reliable semantic recommendations require `SEMANTIC_SCHOLAR_API_KEY`, and Trove says so directly.
+- `find_similar_papers` works without a Semantic Scholar key, but keyless calls share a busy pool and often get `429`. Semantic Scholar also has no recommendations for many papers outside computer science and recent work. In both cases Trove returns an error and says why. It never falls back to keyword overlap.
 - Some papers are retrievable even when their provider coverage is incomplete. For example, an arXiv preprint may have full text but no usable reference list in Semantic Scholar or OpenAlex.
 
 ## Runtime behavior
@@ -175,10 +175,10 @@ TROVE_HTTP_BEARER_TOKEN=change-me TROVE_HTTP_CORS_ORIGIN=http://localhost:3000 n
 | `search_papers` | Multi-source search + dedupe + deterministic ranking (OpenAlex/S2/arXiv/PubMed/CORE) |
 | `get_trending_papers` | Topic papers ranked by citation velocity with `mode = snapshot | unavailable` |
 | `get_paper` | Resolve paper by DOI/arXiv/S2/OpenAlex/PubMed/title |
-| `get_full_text` | arXiv -> OpenAlex open-access PDF location -> Unpaywall -> CORE full-text fallback with chunked output |
+| `get_full_text` | arXiv -> OpenAlex open-access PDF location -> Unpaywall -> CORE full-text fallback with chunked output; a journal landing page is followed to the PDF named in its `citation_pdf_url` tag |
 | `get_citations` | Papers that cite a target paper |
 | `get_references` | Papers referenced by a target paper |
-| `find_similar_papers` | Semantic Scholar recommendations; reliable use requires `SEMANTIC_SCHOLAR_API_KEY` |
+| `find_similar_papers` | Semantic Scholar recommendations; works without a key, `SEMANTIC_SCHOLAR_API_KEY` makes it reliable |
 | `get_author` | Author profile and impact metrics; paper-list enrichment is best-effort |
 | `get_institution_output` | Institution profile + publication output |
 | `get_coauthor_network` | Collaboration graph around an author |

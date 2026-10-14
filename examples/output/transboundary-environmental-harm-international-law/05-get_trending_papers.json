@@ -15,7 +15,7 @@
       {
         "source": "openalex",
         "endpoint": "trending:candidates",
-        "timestamp": "2026-10-14T10:21:31.136Z",
+        "timestamp": "2026-10-14T13:55:18.974Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -23,7 +23,7 @@
       {
         "source": "semantic_scholar",
         "endpoint": "trending:candidates",
-        "timestamp": "2026-10-14T10:22:30.330Z",
+        "timestamp": "2026-10-14T13:56:11.122Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -31,7 +31,7 @@
       {
         "source": "huggingface",
         "endpoint": "trending:candidates",
-        "timestamp": "2026-10-14T10:22:30.330Z",
+        "timestamp": "2026-10-14T13:56:11.123Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -73,7 +73,7 @@
           {
             "source": "huggingface",
             "candidate_count": 6,
-            "snapshotable_count": 5,
+            "snapshotable_count": 6,
             "snapshot_backed_count": 0,
             "non_zero_velocity_count": 0,
             "warnings": []

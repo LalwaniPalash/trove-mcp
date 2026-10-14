@@ -11,8 +11,9 @@
       "Unpaywall returned no PDF for this DOI.",
       "CORE fallback returned no usable PDF.",
       "No full-text PDF source could be resolved.",
+      "OpenAlex open-access PDF location could not be parsed; trying Unpaywall and CORE.",
+      "CORE provided a PDF URL but extraction failed.",
       "full-text fetch failed for doi:10.12957/rqi.2019.31294: literature-map per-paper timeout for doi:10.12957/rqi.2019.31294",
-      "full-text fetch failed for doi:10.1007/978-3-031-13264-3: literature-map per-paper timeout for doi:10.1007/978-3-031-13264-3",
       "build_literature_map reached 45s deadline; returned partial structured map.",
       "Literature map returned partial evidence because coverage or extraction quality is below the preferred threshold."
     ],
@@ -20,7 +21,7 @@
       {
         "source": "openalex",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:16.951Z",
+        "timestamp": "2026-10-14T13:55:04.208Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -28,7 +29,7 @@
       {
         "source": "semantic_scholar",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:16.951Z",
+        "timestamp": "2026-10-14T13:55:04.208Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -36,7 +37,7 @@
       {
         "source": "arxiv",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:16.951Z",
+        "timestamp": "2026-10-14T13:55:04.208Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -44,7 +45,7 @@
       {
         "source": "pubmed",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:16.951Z",
+        "timestamp": "2026-10-14T13:55:04.208Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -52,7 +53,7 @@
       {
         "source": "core",
         "endpoint": "search",
-        "timestamp": "2026-10-14T10:21:16.951Z",
+        "timestamp": "2026-10-14T13:55:04.208Z",
         "cached": false,
         "license": "see-source-terms",
         "latency_ms": 0
@@ -66,6 +67,54 @@
         "query": "transboundary environmental harm international law",
         "depth": 1,
         "papers": [
+          {
+            "id": "doi:10.26650/annales.2023.73.0001",
+            "openAlexId": "W4386724811",
+            "title": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles",
+            "abstract": "Transformation From Soft Law to Hard Law of International Environmental Protection: Process, Basic Concepts And Principles – Part II: “No transboundary environmental harm”, “Precautionary”, “Environmental impact assessment” and “Access to information and participation in decision-making process” principles",
+            "year": 2023,
+            "venue": "Annales de la Faculté de Droit d’Istanbul",
+            "doi": "10.26650/annales.2023.73.0001",
+            "citationCount": 1,
+            "referenceCount": 102,
+            "url": "https://openalex.org/W4386724811",
+            "pdfUrl": "https://dergipark.org.tr/tr/pub/iuafdi/issue/81018/1395618",
+            "openAccess": true,
+            "authors": [
+              {
+                "id": "A5021757158",
+                "name": "Mehmet Semih Gemalmaz"
+              }
+            ],
+            "institutions": [],
+            "topics": [
+              "Harm",
+              "Environmental law",
+              "Process (computing)",
+              "Soft law",
+              "Precautionary principle",
+              "Environmental impact assessment",
+              "Political science",
+              "Law",
+              "Hard law",
+              "Environmental planning"
+            ],
+            "fields": [
+              "Harm",
+              "Environmental law",
+              "Process (computing)",
+              "Soft law",
+              "Precautionary principle",
+              "Environmental impact assessment",
+              "Political science",
+              "Law",
+              "Hard law",
+              "Environmental planning"
+            ],
+            "sourcePriority": [
+              "openalex"
+            ]
+          },
           {
             "id": "doi:10.69612/upujsd-2026-21-023",
             "openAlexId": "W7203579758",
@@ -431,6 +480,14 @@
         ],
         "limitations": [
           {
+            "paperId": "doi:10.26650/annales.2023.73.0001",
+            "limitation": "However, in view of the controversy over the proposal the Stockholm Conference decided to omit the controverted Principle 20 of the Declaration."
+          },
+          {
+            "paperId": "doi:10.26650/annales.2023.73.0001",
+            "limitation": "However, “in their generality, they did not address what was meant by a state being responsible, or what principles of liability should be applied, only that they should be developed further."
+          },
+          {
             "paperId": "doi:10.69612/upujsd-2026-21-023",
             "limitation": "The legal architecture designed to address these harms, however, remains organised primarily around the state as the unit of obligation, the bilateral relationship as the paradigm of dispute, and consent as the basis of binding obligation."
           },
@@ -459,6 +516,10 @@
           {
             "paperId": "doi:10.1007/978-3-031-13264-3",
             "score": 11.76
+          },
+          {
+            "paperId": "doi:10.26650/annales.2023.73.0001",
+            "score": 3.01
           },
           {
             "paperId": "doi:10.69612/upujsd-2026-21-023",
