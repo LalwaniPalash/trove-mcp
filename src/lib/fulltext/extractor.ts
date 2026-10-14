@@ -362,6 +362,13 @@ function toChunks(text: string, options: FullTextOptions): ChunkBuildResult {
   return { chunks, qualityScore: scoreChunkQuality(chunks) };
 }
 
+const PDF_FETCH_TIMEOUT_MS = 15_000;
+const PDF_MAX_BYTES = 30 * 1024 * 1024;
+
+export function isPdf(buffer: Buffer): boolean {
+  return buffer.length > 4 && buffer.subarray(0, 1024).includes("%PDF-");
+}
+
 export async function extractPdfText(
   httpClient: HttpClient,
   source: ProviderName,
@@ -369,11 +376,24 @@ export async function extractPdfText(
 ): Promise<ExtractResult | null> {
   try {
     suppressPdfWarnings();
-    const response = await fetch(url);
+    // Without a timeout one slow publisher host stalls every caller, including
+    // build_literature_map's whole deadline.
+    const response = await fetch(url, {
+      signal: AbortSignal.timeout(PDF_FETCH_TIMEOUT_MS),
+      headers: { "User-Agent": "trove-mcp (+https://github.com/LalwaniPalash/trove-mcp)", Accept: "application/pdf" },
+    });
     if (!response.ok) {
       return null;
     }
+    const declaredSize = Number(response.headers.get("content-length") ?? 0);
+    if (declaredSize > PDF_MAX_BYTES) {
+      return null;
+    }
     const buffer = Buffer.from(await response.arrayBuffer());
+    // Landing pages and HTML error pages are not PDFs; do not hand them to the parser.
+    if (!isPdf(buffer)) {
+      return null;
+    }
 
     // pdf.js (used under pdf-parse) can emit warnings on console methods.
     // In MCP stdio mode stdout must be JSON-only, so redirect while parsing.

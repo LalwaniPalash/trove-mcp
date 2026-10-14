@@ -175,7 +175,7 @@ TROVE_HTTP_BEARER_TOKEN=change-me TROVE_HTTP_CORS_ORIGIN=http://localhost:3000 n
 | `search_papers` | Multi-source search + dedupe + deterministic ranking (OpenAlex/S2/arXiv/PubMed/CORE) |
 | `get_trending_papers` | Topic papers ranked by citation velocity with `mode = snapshot | unavailable` |
 | `get_paper` | Resolve paper by DOI/arXiv/S2/OpenAlex/PubMed/title |
-| `get_full_text` | arXiv -> Unpaywall -> CORE full-text fallback with chunked output |
+| `get_full_text` | arXiv -> OpenAlex open-access PDF location -> Unpaywall -> CORE full-text fallback with chunked output |
 | `get_citations` | Papers that cite a target paper |
 | `get_references` | Papers referenced by a target paper |
 | `find_similar_papers` | Semantic Scholar recommendations; reliable use requires `SEMANTIC_SCHOLAR_API_KEY` |

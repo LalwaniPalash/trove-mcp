@@ -1,4 +1,5 @@
 import type { AppConfig } from "../core/config.js";
+import { TroveError } from "../core/errors.js";
 import type { ProviderName } from "../types/common.js";
 import type { HttpClient } from "../utils/http.js";
 
@@ -35,14 +36,24 @@ export class UnpaywallAdapter {
     const url = new URL(`${this.baseUrl}/${encodeURIComponent(normalized)}`);
     url.searchParams.set("email", this.email);
 
-    const response = await this.httpClient.requestJson<Record<string, unknown>>(
-      this.provider,
-      url.toString(),
-      {
-        endpointLabel: "unpaywall:doi",
-        license: "Unpaywall Data Feed Terms",
-      },
-    );
+    let response;
+    try {
+      response = await this.httpClient.requestJson<Record<string, unknown>>(
+        this.provider,
+        url.toString(),
+        {
+          endpointLabel: "unpaywall:doi",
+          license: "Unpaywall Data Feed Terms",
+        },
+      );
+    } catch (error) {
+      // Unpaywall answers 404 for DOIs it has no record of. That is a normal
+      // "no open-access copy known", not a provider failure.
+      if (error instanceof TroveError && error.statusCode === 404) {
+        return null;
+      }
+      throw error;
+    }
 
     const best = (response.data.best_oa_location as Record<string, unknown> | undefined) ?? {};
 

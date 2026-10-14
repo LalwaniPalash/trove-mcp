@@ -128,7 +128,7 @@ export function registerTools(server: McpServer, ctx: AppContext, disabledTools:
     "get_full_text",
     {
       title: "Get Full Text",
-      description: "Retrieve full text with fallback order arXiv -> Unpaywall -> CORE.",
+      description: "Retrieve full text with fallback order arXiv -> OpenAlex open-access PDF location -> Unpaywall -> CORE.",
       inputSchema: {
         identifier: z.string().min(1).describe("Paper identifier."),
       },

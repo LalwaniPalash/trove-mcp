@@ -72,32 +72,12 @@ export class CoreAdapter {
 
   async findPdfByDoi(doi: string): Promise<string | null> {
     const normalized = doi.replace(/^https?:\/\/doi.org\//i, "").toLowerCase();
-    const candidateQueries = [normalized, `doi:${normalized}`];
-    let lastError: unknown;
-
-    for (const query of candidateQueries) {
-      try {
-        const results = await this.searchPapers(query, 5);
-        const exact = results.find(
-          (paper) => paper.doi?.toLowerCase() === normalized && paper.pdfUrl,
-        );
-        if (exact?.pdfUrl) {
-          return exact.pdfUrl;
-        }
-
-        const fallback = results.find((paper) => Boolean(paper.pdfUrl));
-        if (fallback?.pdfUrl) {
-          return fallback.pdfUrl;
-        }
-      } catch (error) {
-        lastError = error;
-      }
-    }
-
-    if (lastError) {
-      throw lastError;
-    }
-
-    return null;
+    // CORE answers a bare DOI query with HTTP 500; the field query must be quoted.
+    const results = await this.searchPapers(`doi:"${normalized}"`, 5);
+    // Only an exact DOI match counts. Any other hit is a different paper's PDF.
+    const exact = results.find(
+      (paper) => paper.doi?.toLowerCase() === normalized && paper.pdfUrl,
+    );
+    return exact?.pdfUrl ?? null;
   }
 }

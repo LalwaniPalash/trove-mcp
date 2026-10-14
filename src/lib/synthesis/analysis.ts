@@ -146,6 +146,12 @@ export function extractClaims(paper: CanonicalPaper, fullText?: FullTextPayload)
       "our findings",
       "we observe",
       "this suggests",
+      // Law, humanities and social-science papers state findings as arguments.
+      "this paper argues",
+      "this article argues",
+      "we argue",
+      "this study finds",
+      "concludes that",
     ],
     5,
   );

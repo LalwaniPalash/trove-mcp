@@ -97,7 +97,7 @@ function titleAbstractAlignmentScore(paper: CanonicalPaper): number {
   return hits / Math.min(titleTokens.length, 4);
 }
 
-function extractArxivIdFromText(value: string | undefined): string | null {
+export function extractArxivIdFromText(value: string | undefined): string | null {
   if (!value) {
     return null;
   }
@@ -117,7 +117,9 @@ function extractArxivIdFromText(value: string | undefined): string | null {
     return pdfMatch[1].toLowerCase();
   }
 
-  const directMatch = trimmed.match(/(\d{4}\.\d{4,5}(v\d+)?)/i);
+  // Anchored: an unanchored match turns DOIs such as 10.12957/rqi.2019.31294
+  // into arXiv IDs and can fetch a different paper's PDF.
+  const directMatch = trimmed.match(/^(?:arxiv:)?(\d{4}\.\d{4,5}(v\d+)?)$/i);
   if (directMatch) {
     return directMatch[1].toLowerCase();
   }
@@ -1072,8 +1074,18 @@ export class ResearchService {
       if (!extraction && arxivCandidates.length > 0) {
         this.addWarning(
           warnings,
-          "arXiv full-text PDF could not be parsed; trying Unpaywall and CORE.",
+          "arXiv full-text PDF could not be parsed; trying other open-access sources.",
         );
+      }
+
+      // OpenAlex already lists the open-access PDF location for many papers that
+      // Unpaywall and CORE miss, so try it before spending two more lookups.
+      if (!extraction && paper.pdfUrl && !/arxiv\.org/i.test(paper.pdfUrl)) {
+        extraction = await extractPdfText(this.httpClient, "openalex", paper.pdfUrl);
+        fullTextProvenance.push(provenance("openalex", "fulltext:oa-location"));
+        if (!extraction) {
+          this.addWarning(warnings, "OpenAlex open-access PDF location could not be parsed; trying Unpaywall and CORE.");
+        }
       }
 
       if (!extraction && paper.doi) {
@@ -1136,7 +1148,9 @@ export class ResearchService {
       const payload = toFullTextPayload(paper.id, extraction, paper.abstract);
       this.repo.upsertFullText(payload);
 
-      const isOk = payload.availability === "full_text" && warnings.length === 0;
+      // Full text in hand is a complete answer. Warnings from sources tried
+      // before the one that worked stay in the envelope as information.
+      const isOk = payload.availability === "full_text";
 
       return makeEnvelope({
         data: { fullText: payload },

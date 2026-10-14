@@ -40,6 +40,16 @@ function fromInvertedIndex(index: Record<string, number[]> | undefined): string 
     .join(" ");
 }
 
+// open_access.oa_url is often a landing page. Only pdf_url on an open-access
+// location points at a PDF, so prefer the best location, then any other one.
+export function openAlexPdfUrl(work: Record<string, unknown>): string | undefined {
+  const best = work.best_oa_location as Record<string, unknown> | null | undefined;
+  const locations = Array.isArray(work.locations) ? (work.locations as Array<Record<string, unknown>>) : [];
+  const candidates = [best, ...locations].filter((location) => location?.is_oa === true);
+  const url = candidates.find((location) => typeof location?.pdf_url === "string")?.pdf_url;
+  return typeof url === "string" ? url : undefined;
+}
+
 function mapWorkToPaper(work: Record<string, unknown>): CanonicalPaper {
   const id = String(work.id ?? "");
   const authorships = Array.isArray(work.authorships) ? work.authorships : [];
@@ -93,7 +103,7 @@ function mapWorkToPaper(work: Record<string, unknown>): CanonicalPaper {
     citationCount: Number(work.cited_by_count ?? 0),
     referenceCount: Array.isArray(work.referenced_works) ? work.referenced_works.length : undefined,
     url: String(work.id ?? ""),
-    pdfUrl: typeof openAccess.oa_url === "string" ? String(openAccess.oa_url) : undefined,
+    pdfUrl: openAlexPdfUrl(work),
     openAccess: Boolean(openAccess.is_oa),
     authors,
     institutions,
