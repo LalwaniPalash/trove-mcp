@@ -108,7 +108,7 @@ describe("release quality gate", () => {
     expect(result.meta).toEqual(testMeta);
   });
 
-  it("blocks similarity output without semantic scholar api key", async () => {
+  it("returns no similarity output when keyless recommendations are empty", async () => {
     const { service, semantic } = createService();
     vi.spyOn(service, "getPaper").mockResolvedValue({
       status: "ok",
@@ -123,7 +123,26 @@ describe("release quality gate", () => {
     expect(result.status).toBe("error");
     expect(result.data.papers).toHaveLength(0);
     expect(result.warnings.some((warning) => warning.includes("SEMANTIC_SCHOLAR_API_KEY"))).toBe(true);
-    expect(semantic.findSimilarPapers).not.toHaveBeenCalled();
+    expect(semantic.findSimilarPapers).toHaveBeenCalled();
+  });
+
+  it("returns real Semantic Scholar recommendations without a key", async () => {
+    const { service, semantic } = createService();
+    vi.spyOn(service, "getPaper").mockResolvedValue({
+      status: "ok",
+      degraded: false,
+      warnings: [],
+      provenance: [],
+      meta: testMeta,
+      data: { paper: canonicalPaper },
+    });
+    const recommended = { ...canonicalPaper, id: "s2:rec1", title: "A recommended paper" };
+    semantic.findSimilarPapers.mockResolvedValueOnce([recommended] as never);
+
+    const result = await service.findSimilarPapers("arxiv:1706.03762", 5);
+    expect(result.status).toBe("ok");
+    expect(result.data.papers.map((paper) => paper.id)).toEqual(["s2:rec1"]);
+    expect(result.provenance.every((entry) => entry.source === "semantic_scholar")).toBe(true);
   });
 
   it("fails closed when references are expected but unavailable", async () => {

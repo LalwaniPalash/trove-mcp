@@ -164,7 +164,7 @@ describe("ResearchService lockdown behavior", () => {
     expect(envelope.data.paper?.year).toBe(2017);
   });
 
-  it("returns deterministic error when semantic scholar api key is missing for similarity", async () => {
+  it("returns an error with a key hint when keyless recommendations are empty", async () => {
     const { service, semantic } = createService();
     vi.spyOn(service, "getPaper").mockResolvedValue({
       status: "ok",
@@ -179,7 +179,7 @@ describe("ResearchService lockdown behavior", () => {
     expect(envelope.status).toBe("error");
     expect(envelope.data.papers).toHaveLength(0);
     expect(envelope.warnings.some((w) => w.includes("SEMANTIC_SCHOLAR_API_KEY"))).toBe(true);
-    expect(semantic.findSimilarPapers).not.toHaveBeenCalled();
+    expect(semantic.findSimilarPapers).toHaveBeenCalled();
   });
 
   it("returns explicit error when references are expected but unavailable", async () => {

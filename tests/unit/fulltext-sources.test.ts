@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import { CoreAdapter } from "../../src/lib/adapters/core.js";
 import { openAlexPdfUrl } from "../../src/lib/adapters/openalex.js";
-import { isPdf } from "../../src/lib/fulltext/extractor.js";
+import { citationPdfUrl, isPdf } from "../../src/lib/fulltext/extractor.js";
 import { extractClaims } from "../../src/lib/synthesis/analysis.js";
 import type { AppConfig } from "../../src/lib/core/config.js";
 import type { CanonicalPaper } from "../../src/lib/types/common.js";
@@ -54,6 +54,21 @@ describe("PDF detection", () => {
   it("accepts a PDF header and rejects an HTML page", () => {
     expect(isPdf(Buffer.from("%PDF-1.7\n..."))).toBe(true);
     expect(isPdf(Buffer.from("<!doctype html><html>landing page</html>"))).toBe(false);
+  });
+});
+
+describe("landing-page PDF link", () => {
+  it("resolves a relative citation_pdf_url against the page URL", () => {
+    const html = '<head><meta name="citation_title" content="X" /><meta name="citation_pdf_url" content="/tr/download/article-file/3558010" /></head>';
+    expect(citationPdfUrl(html, "https://dergipark.org.tr/tr/pub/iuafdi/issue/81018/1395618")).toBe(
+      "https://dergipark.org.tr/tr/download/article-file/3558010",
+    );
+  });
+
+  it("accepts either attribute order and ignores pages without the tag", () => {
+    expect(citationPdfUrl('<meta content="https://x.org/a.pdf" name="citation_pdf_url">', "https://x.org/")).toBe("https://x.org/a.pdf");
+    expect(citationPdfUrl('<meta name="citation_title" content="X">', "https://x.org/")).toBeUndefined();
+    expect(citationPdfUrl('<meta name="citation_pdf_url" content="javascript:alert(1)">', "https://x.org/")).toBeUndefined();
   });
 });
 

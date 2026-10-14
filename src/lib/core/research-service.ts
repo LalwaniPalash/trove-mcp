@@ -1409,18 +1409,6 @@ export class ResearchService {
         });
       }
 
-      if (!this.semantic.hasApiKeyConfigured()) {
-        const warnings = [...paperEnvelope.warnings];
-        this.addWarning(warnings, this.semantic.reliableRecommendationsWarning());
-        return makeEnvelope({
-          data: { papers: [] },
-          status: "error",
-          degraded: true,
-          warnings,
-          provenance: [provenance("semantic_scholar", "recommendations")],
-        });
-      }
-
       const handle = paper.s2Id ? paper.s2Id : paper.doi ? `DOI:${paper.doi}` : identifier;
       const warnings: string[] = [...paperEnvelope.warnings];
       let papers: CanonicalPaper[] = [];
@@ -1441,6 +1429,10 @@ export class ResearchService {
           warnings,
           "Semantic similarity unavailable: Semantic Scholar returned no recommendations or is currently rate-limited.",
         );
+        // Keyless calls share a throttled pool; say how to make them reliable.
+        if (!this.semantic.hasApiKeyConfigured()) {
+          this.addWarning(warnings, this.semantic.reliableRecommendationsWarning());
+        }
         return makeEnvelope({
           data: { papers: [] },
           status: "error",

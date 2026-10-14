@@ -362,11 +362,87 @@ function toChunks(text: string, options: FullTextOptions): ChunkBuildResult {
   return { chunks, qualityScore: scoreChunkQuality(chunks) };
 }
 
-const PDF_FETCH_TIMEOUT_MS = 15_000;
+const PDF_IDLE_TIMEOUT_MS = 15_000;
+const PDF_TOTAL_TIMEOUT_MS = 60_000;
 const PDF_MAX_BYTES = 30 * 1024 * 1024;
 
 export function isPdf(buffer: Buffer): boolean {
   return buffer.length > 4 && buffer.subarray(0, 1024).includes("%PDF-");
+}
+
+// Journal landing pages name their PDF in a Highwire `citation_pdf_url` meta tag
+// (Google Scholar requires it), so an HTML "PDF link" is often one hop away.
+export function citationPdfUrl(html: string, baseUrl: string): string | undefined {
+  for (const tag of html.match(/<meta\b[^>]*>/gi) ?? []) {
+    if (!/name\s*=\s*["']citation_pdf_url["']/i.test(tag)) {
+      continue;
+    }
+    const content = tag.match(/content\s*=\s*["']([^"']+)["']/i)?.[1];
+    if (!content) {
+      continue;
+    }
+    try {
+      const url = new URL(content.replace(/&amp;/g, "&"), baseUrl);
+      return url.protocol === "https:" || url.protocol === "http:" ? url.toString() : undefined;
+    } catch {
+      return undefined;
+    }
+  }
+  return undefined;
+}
+
+interface FetchedDocument {
+  buffer: Buffer;
+  finalUrl: string;
+}
+
+async function fetchDocument(url: string): Promise<FetchedDocument | null> {
+  // Abort when the host goes quiet, not when a slow but live download passes a
+  // fixed mark: some repositories stream a 1 MB PDF over 20-30 s. The overall
+  // cap still stops one host from stalling every caller.
+  const controller = new AbortController();
+  const overall = setTimeout(() => controller.abort(), PDF_TOTAL_TIMEOUT_MS);
+  let idle = setTimeout(() => controller.abort(), PDF_IDLE_TIMEOUT_MS);
+  const stillAlive = () => {
+    clearTimeout(idle);
+    idle = setTimeout(() => controller.abort(), PDF_IDLE_TIMEOUT_MS);
+  };
+
+  try {
+    const response = await fetch(url, {
+      signal: controller.signal,
+      headers: { "User-Agent": "trove-mcp (+https://github.com/LalwaniPalash/trove-mcp)", Accept: "application/pdf" },
+    });
+    if (!response.ok || !response.body) {
+      return null;
+    }
+    const declaredSize = Number(response.headers.get("content-length") ?? 0);
+    if (declaredSize > PDF_MAX_BYTES) {
+      return null;
+    }
+
+    const reader = response.body.getReader();
+    const chunks: Uint8Array[] = [];
+    let size = 0;
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) {
+        break;
+      }
+      stillAlive();
+      size += value.byteLength;
+      // content-length can be absent or wrong; enforce the cap on what arrives.
+      if (size > PDF_MAX_BYTES) {
+        controller.abort();
+        return null;
+      }
+      chunks.push(value);
+    }
+    return { buffer: Buffer.concat(chunks), finalUrl: response.url || url };
+  } finally {
+    clearTimeout(overall);
+    clearTimeout(idle);
+  }
 }
 
 export async function extractPdfText(
@@ -376,33 +452,28 @@ export async function extractPdfText(
 ): Promise<ExtractResult | null> {
   try {
     suppressPdfWarnings();
-    // Without a timeout one slow publisher host stalls every caller, including
-    // build_literature_map's whole deadline.
-    const response = await fetch(url, {
-      signal: AbortSignal.timeout(PDF_FETCH_TIMEOUT_MS),
-      headers: { "User-Agent": "trove-mcp (+https://github.com/LalwaniPalash/trove-mcp)", Accept: "application/pdf" },
-    });
-    if (!response.ok) {
+    let document = await fetchDocument(url);
+    if (!document) {
       return null;
     }
-    const declaredSize = Number(response.headers.get("content-length") ?? 0);
-    if (declaredSize > PDF_MAX_BYTES) {
-      return null;
-    }
-    const buffer = Buffer.from(await response.arrayBuffer());
-    // Landing pages and HTML error pages are not PDFs; do not hand them to the parser.
-    if (!isPdf(buffer)) {
-      return null;
+    // A landing page is not a PDF. Follow its declared PDF link once; never
+    // hand HTML to the parser.
+    if (!isPdf(document.buffer)) {
+      const pdfUrl = citationPdfUrl(document.buffer.subarray(0, 512 * 1024).toString("utf8"), document.finalUrl);
+      document = pdfUrl ? await fetchDocument(pdfUrl) : null;
+      if (!document || !isPdf(document.buffer)) {
+        return null;
+      }
     }
 
     // pdf.js (used under pdf-parse) can emit warnings on console methods.
     // In MCP stdio mode stdout must be JSON-only, so redirect while parsing.
     // Parsing is serialized to avoid concurrent guard restore races.
-    const parsed = await parsePdfWithStdoutGuard(buffer);
+    const parsed = await parsePdfWithStdoutGuard(document.buffer);
 
     return {
       source,
-      sourceUrl: url,
+      sourceUrl: document.finalUrl,
       rawText: normalizePdfText(cleanText(parsed.text ?? "")),
     };
   } catch {

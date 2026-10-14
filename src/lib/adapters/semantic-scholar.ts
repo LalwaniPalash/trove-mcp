@@ -99,12 +99,6 @@ export class SemanticScholarAdapter {
       : "Semantic similarity requires SEMANTIC_SCHOLAR_API_KEY for reliable Semantic Scholar recommendations.";
   }
 
-  private keyWarning(): string | null {
-    return this.hasKey
-      ? null
-      : "Semantic Scholar is accessible without a key, but unauthenticated requests use a shared pool and may be throttled (429).";
-  }
-
   private buildQuery(filters: SearchFilters): string {
     const terms: string[] = [];
     if (filters.field) {
@@ -123,11 +117,9 @@ export class SemanticScholarAdapter {
     url.searchParams.set("limit", String(filters.limit ?? 25));
     url.searchParams.set("fields", SEARCH_FIELDS);
 
+    // A successful keyless search is a full answer. A 429 surfaces as a source
+    // failure with its own warning, so no advisory warning is added here.
     const warnings: string[] = [];
-    const keyWarning = this.keyWarning();
-    if (keyWarning) {
-      warnings.push(keyWarning);
-    }
 
     const response = await this.httpClient.requestJson<Record<string, unknown>>(this.provider, url.toString(), {
       headers: this.headers,

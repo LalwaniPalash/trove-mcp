@@ -205,7 +205,7 @@ export function registerTools(server: McpServer, ctx: AppContext, disabledTools:
     "find_similar_papers",
     {
       title: "Find Similar Papers",
-      description: "Find semantically similar papers via Semantic Scholar recommendations. Reliable use requires SEMANTIC_SCHOLAR_API_KEY.",
+      description: "Find semantically similar papers via Semantic Scholar recommendations. Works without a key on a shared, rate-limited pool; SEMANTIC_SCHOLAR_API_KEY makes it reliable. Never falls back to keyword overlap.",
       inputSchema: {
         paper_id: z.string().min(1).describe("Paper identifier."),
         limit: z.number().int().min(1).max(50).default(20).describe("Recommendation limit."),
